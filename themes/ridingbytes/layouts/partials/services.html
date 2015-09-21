@@ -1,0 +1,31 @@
+{{ with .Site.Params.services }}
+<div class="container">
+  <div class="row">
+
+    {{ range .list }}
+    <!-- service -->
+    <div class="col-md-3 infoblock">
+      <a href="{{ .href }}">
+        <div class="rd-medal e-centered">
+          <span class="{{ .cls }}"></span>
+        </div>
+      </a>
+        <div class="dividewhite3"></div>
+        <h5 class="font-accident-one-medium uppercase"><a href="{{ .href }}">{{ .title }}</a></h5>
+        <p>{{ .description }}</p>
+
+        {{ if isset . "details" }}
+        <ul>
+            {{ range .details }}
+            <li>{{ index . 0 }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+
+    </div>
+    <!-- /service -->
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

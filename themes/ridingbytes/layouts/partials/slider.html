@@ -33,7 +33,7 @@
            {{ else if isset . "text" }}
              <p class="{{ .cls }}">{{ .text }}</hp>
            {{ else if isset . "link" }}
-             <a href="{{ .href }}" class="page-scroll btn btn-lg btn-wh-str">{{ .link }}</a>
+           <a href="{{ .href }}" class="{{ .cls }}">{{ .link }}</a>
            {{ end }}
          </div>
 
