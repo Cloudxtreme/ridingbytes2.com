@@ -238,11 +238,11 @@ $accentcolor: #ff9900;
     color: $fontcolor-medium-light;
   }
   a, .infoblock a {
-	color: $fontcolor-invert;
-	&:hover {
-	  color: $hovercolor;
-	  text-decoration: none;
-	}
+  color: $fontcolor-invert;
+  &:hover {
+    color: $hovercolor;
+    text-decoration: none;
+  }
   }
 }
 
@@ -1833,11 +1833,11 @@ ul.sf-menu > li, .sf-menu > li > a {  border: none;  text-align: left;  }
     border-top: 3px solid $bg-dark;
   }
   a {
-	color: $fontcolor-regular;
-	&:hover {
-	  text-decoration: none;
-	  color: $hovercolor;
-	}
+  color: $fontcolor-regular;
+  &:hover {
+    text-decoration: none;
+    color: $hovercolor;
+  }
   }
 }
 
@@ -2956,7 +2956,7 @@ blockquote footer:before, blockquote small:before, blockquote .small:before {  c
     &:hover {
       background: $fontcolor-invert;
       border: 1px solid $bg-dark;
-	  color: $fontcolor-regular;
+    color: $fontcolor-regular;
       opacity: 1;
       text-decoration: none;
     }
@@ -3019,12 +3019,12 @@ blockquote footer:before, blockquote small:before, blockquote .small:before {  c
     }
   }
   &:hover {
-	background: $fontcolor-invert;
-	border: 1px dotted $hovercolor;
+  background: $fontcolor-invert;
+  border: 1px dotted $hovercolor;
   }
   &:hover ul li {
-	border-top: 1px dotted $hovercolor;
-	&:last-child {  border-bottom: 1px dotted $hovercolor;  }
+  border-top: 1px dotted $hovercolor;
+  &:last-child {  border-bottom: 1px dotted $hovercolor;  }
   }
   &:hover .price-number,
   &:hover .price-plan,
@@ -3032,11 +3032,11 @@ blockquote footer:before, blockquote small:before, blockquote .small:before {  c
   &:hover .price-conclusion,
   &:hover ul li {
     color: $hovercolor;
-	cursor: pointer;
+  cursor: pointer;
   }
   &:hover .btn {
-	background: $hovercolor;
-	border-color: $hovercolor;
+  background: $hovercolor;
+  border-color: $hovercolor;
   }
 }
 .plain {
@@ -3096,7 +3096,7 @@ blockquote footer:before, blockquote small:before, blockquote .small:before {  c
     .team-position {  font-size: 12px;  }
   }
   .team-content {
-	color: #999;
+  color: #999;
     background: #fff;
     font-size: 12px;
     padding: 16px 16px 24px 16px;
@@ -3264,16 +3264,16 @@ figure.effect-zoe {
   float: none;
   img {
     display: inline-block;
-	opacity: 1;
+  opacity: 1;
   }
   p.icon-links a {
     float: right;
     color: $fontcolor-invert;
     font-size: 2.2em;
-	opacity: .9;
+  opacity: .9;
     &:hover, &:focus {
       color: $fontcolor-invert;
-	  opacity: 1;
+    opacity: 1;
     }
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -3706,10 +3706,10 @@ a.gm-toggle-link {  cursor: pointer;  }
   .counts .count-container .count .count-icon {  font-size: 24px;  }
   .partners {  display: none;  }
   .port-filter ul li {
-	display: block;
-	margin-bottom: 12px;
-	width: 100%;
-	a {width: 100%;  }
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  a {width: 100%;  }
   }
 }
 

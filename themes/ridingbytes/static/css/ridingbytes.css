@@ -3498,3 +3498,29 @@ a.gm-toggle-link {
     margin-bottom: 30px; }
   .sticky-wrapper {
     height: 80px; } }
+
+.hp-section-description {
+  font-family: "Georgia", serif;
+  font-style: oblique; }
+
+.hp-team ul.social-buttons {
+  margin-bottom: 0; }
+
+.hp-team ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.hp-team ul.social-buttons li a:hover,
+.hp-team ul.social-buttons li a:focus,
+.hp-team ul.social-buttons li a:active {
+  /*background-color: $rb-gold;*/ }
