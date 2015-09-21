@@ -12,39 +12,14 @@ title = "Riding Bytes"
     keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
     dateformat = "Mon, Jan 2, 2006"
 
-    # Top Contacts
-    [params.top]
-        [[params.top.list]]
-            title = "Facebook"
-            href = "https://www.facebook.com/ridingbytes"
-            cls = "fa fa-facebook"
-
-        [[params.top.list]]
-            title = "GitHub"
-            href = "https://github.com/ridingbytes"
-            cls = "fa fa-github"
-
-        [[params.top.list]]
-            title = "LinkedIn"
-            href = "https://www.linkedin.com/company/riding-bytes"
-            cls = "fa fa-linkedin"
-
-        [[params.top.list]]
-            title = "Twitter"
-            href = "https://twitter.com/ridingbytes"
-            cls = "fa fa-twitter"
-
-
     # Navigation
     [params.navigation]
-        brand = "Riding Bytes"
-
         [[params.navigation.list]]
             title = "Home"
             href = "/"
             submenu = [
-                ["#foo", "Foo"],
-                ["#bar", "Bar"]
+                ["#services", "Services"],
+                ["#team", "Team"]
             ]
 
         [[params.navigation.list]]
@@ -59,13 +34,183 @@ title = "Riding Bytes"
             title = "Blog"
             href = "/blog"
 
-
     # Slider
     [params.slider]
 
-        # main sliders in slider.html
-        [[params.slider.list]]
-            image = "header1.jpg"
-            heading = "Riding Bytes"
-            subheading = "International Coding Company"
-            logo = "ridingbytes_logo.png"
+        # slide 1
+        [[params.slider.slides]]
+            img = "header1.jpg"
+            alt = "Computer Background"
+            [[params.slider.slides.layers]]
+                img = "rb_logo_weiss.png"
+                alt = "Riding Bytes"
+                start = "750"
+                y = "210"
+            [[params.slider.slides.layers]]
+                description = "International Coding Company"
+                start = "800"
+                y = "400"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "480"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+    # team
+    [params.team]
+        title = "Our amazing team"
+        description = "Potential is not a matter of size"
+        [[params.team.members]]
+            img = "ramon.jpg"
+            name = "Ramon Bartl"
+            position = "Owner & Coder"
+            social = [
+                ["fa-twitter", "https://twitter.com/ramonbartl"],
+                ["fa-linkedin", "https://www.linkedin.com/in/ramonski"],
+                ["fa-github", "https://github.com/ramonski"],
+                ["fa-facebook", "https://www.facebook.com/ramonbartl"]
+            ]
+        [[params.team.members]]
+            img = "lucky.jpg"
+            name = "Lucky Luke"
+            position = "Byte Riding Horse"
+            social = [
+                ["fa-twitter", "https://twitter.com/ridingbytes"],
+                ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
+                ["fa-github", "https://github.com/ridingbytes"],
+                ["fa-facebook", "https://www.facebook.com/ridingbytes"]
+            ]
+
+    # services
+    [params.services]
+        title = "Services"
+        description = "The Internet is our Riding Stable"
+        [[params.services.list]]
+            title = "Web Development"
+            description = ""
+            cls = "icon-box"
+            href = ""
+            details = [
+                ["Programming"],
+                ["Databases"],
+                ["APIs"]
+            ]
+        [[params.services.list]]
+            title = "UI / UX Design"
+            description = ""
+            cls = "icon-layers"
+            href = ""
+            details = [
+                ["Web based UIs"],
+                ["Responsive"],
+                ["Mobile/Desktop"]
+            ]
+        [[params.services.list]]
+            title = "Consulting"
+            description = ""
+            cls = "icon-eye"
+            href = ""
+            details = [
+                ["Analysis"],
+                ["Advice"],
+                ["Support"]
+            ]
+        [[params.services.list]]
+            title = "Administration"
+            description = ""
+            cls = "icon-server"
+            href = ""
+            details = [
+                ["Installation"],
+                ["Maintenance"],
+                ["Monitoring"]
+            ]
+
+
+
+    # systems
+    [params.systems]
+        [[params.systems.links]]
+            title = "Plone"
+            url = "https://plone.org"
+            img = "plone.png"
+        [[params.systems.links]]
+            title = "ExtJS"
+            url = "https://sencha.com"
+            img = "extjs.png"
+        [[params.systems.links]]
+            title = "Odoo"
+            url = "https://odoo.com"
+            img = "odoo.png"
+        [[params.systems.links]]
+            title = "GitHub"
+            url = "https://github.com"
+            img = "github.png"
+        [[params.systems.links]]
+            title = "Python"
+            url = "https://python.com"
+            img = "python.png"
+        [[params.systems.links]]
+            title = "CoffeeScript"
+            url = "http://coffescript.org"
+            img = "coffeescript.png"
+
+    # about the company
+    [params.about]
+        title = "Riding Bytes"
+        [[params.about.infos]]
+            text = "RIDING BYTES is a web development company, which is specialized in UI/UX design, server based solutions and consulting services."
+        [[params.about.infos]]
+            text = "With over 10 years of experience in web development and consulting, we provide the right solutions for small, medium and large enterprises."
+
+    # contact information
+    [params.contact]
+        title = "Contact"
+        name = "Riding Bytes"
+        phone = "+49 160 5551008"
+        email = "hello@ridingbytes.com"
+        address = "RIDING BYTES UG (haftungsbeschränkt), Einöde 49A, 87474 Buchenberg, Germany"
+        web = "http://ridingbytes.com"
+
+    # social media links
+    [params.follow]
+        title = "Follow us"
+
+        [[params.follow.list]]
+            title = "Facebook"
+            href = "https://www.facebook.com/ridingbytes"
+            cls = "fa fa-facebook"
+
+        [[params.follow.list]]
+            title = "GitHub"
+            href = "https://github.com/ridingbytes"
+            cls = "fa fa-github"
+
+        [[params.follow.list]]
+            title = "LinkedIn"
+            href = "https://www.linkedin.com/company/riding-bytes"
+            cls = "fa fa-linkedin"
+
+        [[params.follow.list]]
+            title = "Twitter"
+            href = "https://twitter.com/ridingbytes"
+            cls = "fa fa-twitter"
+
+    # flickr feed
+    [params.flickr]
+        title = "Flickr Feed"
+
+    # copyright
+    [params.copyright]
+        year = "2015"
+        text = "All rights reserved"
+
+        # additional copyright links
+        [[params.copyright.links]]
+            title = "Terms & Conditions"
+            url = ""
+        [[params.copyright.links]]
+            title = "Legal Notice"
+            url = ""
