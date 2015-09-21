@@ -1,0 +1,71 @@
+# Site settings
+
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "Riding Bytes"
+
+[params]
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Ramon Bartl"
+    description = "Riding Bytes UG (haftungsbeschränkt)"
+    keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
+    dateformat = "Mon, Jan 2, 2006"
+
+    # Top Contacts
+    [params.top]
+        [[params.top.list]]
+            title = "Facebook"
+            href = "https://www.facebook.com/ridingbytes"
+            cls = "fa fa-facebook"
+
+        [[params.top.list]]
+            title = "GitHub"
+            href = "https://github.com/ridingbytes"
+            cls = "fa fa-github"
+
+        [[params.top.list]]
+            title = "LinkedIn"
+            href = "https://www.linkedin.com/company/riding-bytes"
+            cls = "fa fa-linkedin"
+
+        [[params.top.list]]
+            title = "Twitter"
+            href = "https://twitter.com/ridingbytes"
+            cls = "fa fa-twitter"
+
+
+    # Navigation
+    [params.navigation]
+        brand = "Riding Bytes"
+
+        [[params.navigation.list]]
+            title = "Home"
+            href = "/"
+            submenu = [
+                ["#foo", "Foo"],
+                ["#bar", "Bar"]
+            ]
+
+        [[params.navigation.list]]
+            title = "About"
+            href = "/about"
+
+        [[params.navigation.list]]
+            title = "Services"
+            href = "/services.html"
+
+        [[params.navigation.list]]
+            title = "Blog"
+            href = "/blog"
+
+
+    # Slider
+    [params.slider]
+
+        # main sliders in slider.html
+        [[params.slider.list]]
+            image = "header1.jpg"
+            heading = "Riding Bytes"
+            subheading = "International Coding Company"
+            logo = "ridingbytes_logo.png"
