@@ -3524,3 +3524,8 @@ a.gm-toggle-link {
 .hp-team ul.social-buttons li a:focus,
 .hp-team ul.social-buttons li a:active {
   /*background-color: $rb-gold;*/ }
+
+.hp-customers {
+  background-color: #fff; }
+  .hp-customers .client h4 {
+    font-family: Novecentosanswide-Light, sans-serif; }

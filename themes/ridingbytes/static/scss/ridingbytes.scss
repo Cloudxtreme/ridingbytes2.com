@@ -2,12 +2,13 @@
 
 $rb-gold: #A99977;
 $rb-blue: #A99977;
+$rb-white: #fff;
 
 .hp-section-title {
 }
 
 .hp-section-description {
-  font-family: "Georgia", serif;
+  font-family: $font-accident-two;
   font-style: oblique;
 }
 
@@ -38,3 +39,10 @@ $rb-blue: #A99977;
   }
 }
 
+
+.hp-customers {
+  background-color: #fff;
+  .client {
+    h4 {font-family: $font-accident-one-light}
+  }
+}
