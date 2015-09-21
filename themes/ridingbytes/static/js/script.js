@@ -315,7 +315,8 @@ jQuery(document).ready(function () {
     jQuery('#basicuse').jflickrfeed({
         limit: 10,
         qstrings: {
-            id: '32532032@N06'
+            id: '136085654@N06',
+            tags: 'ridingbytes'
         },
         itemTemplate: '<li>' +
         '<a href="{{image_b}}"><img src="{{image_s}}" class="img-rounded" alt="{{title}}" /></a>' +
