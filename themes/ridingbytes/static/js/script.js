@@ -384,7 +384,7 @@ jQuery(document).ready(function () {
 
         // Create a map object, and include the MapTypeId to add
         // to the map type control.
-        var $latlng = new google.maps.LatLng(52.5075419, 13.4261419),
+        var $latlng = new google.maps.LatLng(47.688622, 10.238491),
             $mapOptions = {
                 zoom: 13,
                 center: $latlng,
