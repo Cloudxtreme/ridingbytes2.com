@@ -8,7 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body>
+  <body class="template-default">
 
     <!-- sub-top -->
     <div id="sub-top-light">
@@ -37,37 +37,24 @@
         </div>
       </div>
 
-      <!-- Header -->
-      {{ partial "header-home.html" . }}
-      <!-- /Header -->
-
     </header>
     <!-- /main-top -->
 
     <!-- main content -->
     <div id="content">
-
-      <!-- services -->
-      <div id="services" class="e-block e-block-centered e-block-skin hp-services" data-stellar-background-ratio="0.5">
-        {{ partial "services.html" . }}
-      </div>
-
-      <!-- team -->
-      <div id="team" class="e-block e-block-centered e-block-skin e-bg-light hp-team" data-stellar-background-ratio="0.5">
-        {{ partial "team.html" . }}
-      </div>
-
-      <!-- customers -->
-      <div id="customers" class="e-block e-block-centered e-block-skin hp-customers" data-stellar-background-ratio="0.5">
-        {{ partial "customers.html" . }}
-      </div>
-
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
     </div>
 
     <!-- Google Map -->
     <a class="gm-toggle-link">
       <div class="gm-toggle">
-          <i class="fa fa-map-marker"></i>
+        <i class="fa fa-map-marker"></i>
       </div>
     </a>
     <div id="gm-panel">

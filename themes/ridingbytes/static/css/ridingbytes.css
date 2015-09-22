@@ -4292,7 +4292,7 @@ a.gm-toggle-link {
   left: 0;
   background-color: #e8e8e8;
   background: url("../img/sections/contact.png") no-repeat center center;
-  /*background-size: cover;*/
+  background-size: initial;
   will-change: transform;
   z-index: -1;
 }

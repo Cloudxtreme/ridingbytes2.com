@@ -79,7 +79,7 @@ $rb-white: #fff;
     left: 0;
     background-color: $bg-light;
     background: url("../img/sections/contact.png") no-repeat center center;
-    /*background-size: cover;*/
+    background-size: initial;
     will-change: transform; // creates a new paint layer
     z-index: -1;
   }
