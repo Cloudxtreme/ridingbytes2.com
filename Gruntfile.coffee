@@ -22,6 +22,9 @@ module.exports = (grunt) ->
                     ext: '.css'
                 ]
         watch:
+            options:
+                atBegin: true
+                livereload: true
             theme:
                 files: ["themes/ridingbytes/**/*.*"]
                 tasks: ["hugo:dev"]
@@ -34,7 +37,7 @@ module.exports = (grunt) ->
                     livereload: yes
 
             static:
-                files: ["content/**", "data/**"]
+                files: ["data/**", "content/**", "archetypes/**", "media/**"]
                 tasks: ['hugo:dev']
                 options:
                     livereload: yes

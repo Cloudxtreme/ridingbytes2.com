@@ -12,6 +12,7 @@ title = "Riding Bytes"
     keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
     dateformat = "Mon, Jan 2, 2006"
 
+
     # navigation
     [params.navigation]
         title = "Navigation"
@@ -31,6 +32,12 @@ title = "Riding Bytes"
         [[params.navigation.list]]
             title = "Services"
             href = "/services"
+            submenu = [
+                ["/services/#development", "Development"],
+                ["/services/#uiux", "UI/UX"],
+                ["/services/#consulting", "Consulting"],
+                ["/services/#administration", "Administration"]
+            ]
         [[params.navigation.list]]
             title = "Contact"
             href = "/contact"
@@ -49,6 +56,11 @@ title = "Riding Bytes"
             title = "Blog"
             subtitle = ""
 
+        # services section /services
+        [params.sections.services]
+            title = "Services"
+            subtitle = ""
+
         # blog section /contact
         [params.sections.contact]
             title = "Contact"
@@ -59,7 +71,6 @@ title = "Riding Bytes"
             title = "404"
             subtitle = "Sorry, the Page your requested could not be found"
             description = "Page Not Found"
-
 
 
     # slider
@@ -95,7 +106,7 @@ title = "Riding Bytes"
             title = "Web Development"
             description = ""
             cls = "icon-box"
-            href = ""
+            href = "/services/#development"
             details = [
                 ["Programming"],
                 ["Databases"],
@@ -105,7 +116,7 @@ title = "Riding Bytes"
             title = "UI / UX Design"
             description = ""
             cls = "icon-layers"
-            href = ""
+            href = "/services/#uiux"
             details = [
                 ["Web based UIs"],
                 ["Responsive"],
@@ -115,7 +126,7 @@ title = "Riding Bytes"
             title = "Consulting"
             description = ""
             cls = "icon-eye"
-            href = ""
+            href = "/services/#consulting"
             details = [
                 ["Analysis"],
                 ["Advice"],
@@ -125,7 +136,7 @@ title = "Riding Bytes"
             title = "Administration"
             description = ""
             cls = "icon-server"
-            href = ""
+            href = "/services/#administration"
             details = [
                 ["Installation"],
                 ["Maintenance"],
@@ -205,6 +216,7 @@ title = "Riding Bytes"
             url = "http://coffescript.org"
             img = "coffeescript.png"
 
+
     # about the company
     [params.about]
         title = "Riding Bytes"
@@ -212,6 +224,7 @@ title = "Riding Bytes"
             text = "RIDING BYTES is a web development company, which is specialized in UI/UX design, server based solutions and consulting services."
         [[params.about.infos]]
             text = "With over 10 years of experience in web development and consulting, we provide the right solutions for small, medium and large enterprises."
+
 
     # contact information
     [params.contact]
@@ -242,33 +255,32 @@ title = "Riding Bytes"
             text = "Your Message *"
             warning = "Please enter a message."
 
+
     # social media links
     [params.follow]
         title = "Follow us"
-
         [[params.follow.list]]
             title = "Facebook"
             href = "https://www.facebook.com/ridingbytes"
             cls = "fa fa-facebook"
-
         [[params.follow.list]]
             title = "GitHub"
             href = "https://github.com/ridingbytes"
             cls = "fa fa-github"
-
         [[params.follow.list]]
             title = "LinkedIn"
             href = "https://www.linkedin.com/company/riding-bytes"
             cls = "fa fa-linkedin"
-
         [[params.follow.list]]
             title = "Twitter"
             href = "https://twitter.com/ridingbytes"
             cls = "fa fa-twitter"
 
+
     # flickr feed
     [params.flickr]
         title = "Flickr Feed"
+
 
     # copyright
     [params.copyright]
@@ -276,9 +288,9 @@ title = "Riding Bytes"
         text = "All rights reserved"
 
         # additional copyright links
-        [[params.copyright.links]]
-            title = "Terms & Conditions"
-            url = ""
+        #[[params.copyright.links]]
+            #title = "Terms & Conditions"
+            #url = ""
         [[params.copyright.links]]
             title = "Legal Notice"
-            url = ""
+            url = "/about/imprint"
