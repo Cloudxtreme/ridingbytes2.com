@@ -27,7 +27,7 @@
     <!-- /sub-top -->
 
     <!-- main-top -->
-    <header id="header-wrapper-mp" class="sticky-menu-light section-blog">
+    <header id="header-wrapper-mp" class="sticky-menu-light section-404">
 
       <div class="sticky-header header-light" role="navigation">
         <div class="container mp-nav">
@@ -44,56 +44,12 @@
       </div>
 
       <!-- Header -->
-      {{ partial "header-blog.html" . }}
+      {{ partial "header-fourohfour.html" . }}
       <!-- /Header -->
 
     </header>
     <!-- /main-top -->
 
-    <!-- main content -->
-    <div id="content">
-
-      <div id="blog" class="e-block e-block-skin">
-
-        <div class="container">
-
-          <!-- Decorative arrow -->
-          <div class="down-arrow">&nbsp;</div>
-          <!-- /Decorative arrow -->
-
-          <div class="dividewhite6"></div>
-
-          <div id="primary" role="main">
-
-            {{ range .Data.Pages }}
-
-            <article class="post">
-              <!-- Standard Post -->
-              <!-- Blog post attributes #2 -->
-              <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-              <div class="post-attrib">
-                <!--<div class="comment-baloon">75</div>-->
-                <div class="post-data">
-                  <div class="post-date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
-                  <div class="post-author">{{ .Params.author }}</div>
-                </div>
-              </div>
-              <!-- /Blog post attributes #2 -->
-
-              <!-- Post Content -->
-              <p>{{ .Description }}</p>
-              <a role="button" href="{{ .Permalink }}" class="btn btn-default btn-lgr-str">More</a>
-            </article>
-
-            {{ end }}
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
 
     <!-- footer -->
     <div id="footer">
