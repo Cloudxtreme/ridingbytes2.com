@@ -12,29 +12,57 @@ title = "Riding Bytes"
     keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
     dateformat = "Mon, Jan 2, 2006"
 
-    # Navigation
+    # navigation
     [params.navigation]
+        title = "Navigation"
+        description = ""
+
         [[params.navigation.list]]
             title = "Home"
             href = "/"
             submenu = [
-                ["#services", "Services"],
-                ["#team", "Team"]
+                ["/#services", "Services"],
+                ["/#team", "Team"],
+                ["/#customers", "Customers"]
             ]
-
-        [[params.navigation.list]]
-            title = "About"
-            href = "/about"
-
-        [[params.navigation.list]]
-            title = "Services"
-            href = "/services.html"
-
         [[params.navigation.list]]
             title = "Blog"
             href = "/blog"
+        [[params.navigation.list]]
+            title = "Services"
+            href = "/services"
+        [[params.navigation.list]]
+            title = "Contact"
+            href = "/contact"
 
-    # Slider
+
+    # main site sections
+    [params.sections]
+
+        # home section /
+        [params.sections.home]
+            title = "Home"
+            href = "/"
+
+        # blog section /blog
+        [params.sections.blog]
+            title = "Blog"
+            subtitle = ""
+
+        # blog section /contact
+        [params.sections.contact]
+            title = "Contact"
+            subtitle = "Contact us today for any more details"
+
+        # 404 section /404
+        [params.sections.fourohfour]
+            title = "404"
+            subtitle = "Sorry, the Page your requested could not be found"
+            description = "Page Not Found"
+
+
+
+    # slider
     [params.slider]
 
         # slide 1
@@ -58,30 +86,6 @@ title = "Riding Bytes"
                 y = "480"
                 cls = "page-scroll btn btn-lg btn-wh-str"
 
-    # team
-    [params.team]
-        title = "Our amazing team"
-        description = "Potential is not a matter of size"
-        [[params.team.members]]
-            img = "ramon.jpg"
-            name = "Ramon Bartl"
-            position = "Owner & Coder"
-            social = [
-                ["fa-twitter", "https://twitter.com/ramonbartl"],
-                ["fa-linkedin", "https://www.linkedin.com/in/ramonski"],
-                ["fa-github", "https://github.com/ramonski"],
-                ["fa-facebook", "https://www.facebook.com/ramonbartl"]
-            ]
-        [[params.team.members]]
-            img = "lucky.jpg"
-            name = "Lucky Luke"
-            position = "Byte Riding Horse"
-            social = [
-                ["fa-twitter", "https://twitter.com/ridingbytes"],
-                ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
-                ["fa-github", "https://github.com/ridingbytes"],
-                ["fa-facebook", "https://www.facebook.com/ridingbytes"]
-            ]
 
     # services
     [params.services]
@@ -129,6 +133,50 @@ title = "Riding Bytes"
             ]
 
 
+    # team
+    [params.team]
+        title = "Our amazing team"
+        description = "Potential is not a matter of size"
+        [[params.team.members]]
+            img = "ramon.jpg"
+            name = "Ramon Bartl"
+            position = "Owner & Coder"
+            social = [
+                ["fa-twitter", "https://twitter.com/ramonbartl"],
+                ["fa-linkedin", "https://www.linkedin.com/in/ramonski"],
+                ["fa-github", "https://github.com/ramonski"],
+                ["fa-facebook", "https://www.facebook.com/ramonbartl"]
+            ]
+        [[params.team.members]]
+            img = "lucky.jpg"
+            name = "Lucky Luke"
+            position = "Byte Riding Horse"
+            social = [
+                ["fa-twitter", "https://twitter.com/ridingbytes"],
+                ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
+                ["fa-github", "https://github.com/ridingbytes"],
+                ["fa-facebook", "https://www.facebook.com/ridingbytes"]
+            ]
+
+
+    # customers
+    [params.customers]
+        title = "Customers"
+        description = "Worldwide Clients"
+        [[params.customers.list]]
+            name = "2degrees Mobile Limited"
+            logo = "2degrees.jpg"
+            href = "http://www.2degreesmobile.co.nz"
+            description = ""
+        [[params.customers.list]]
+            name = "nexiles GmbH"
+            logo = "nexiles.png"
+            href = "http://www.nexiles.com"
+        [[params.customers.list]]
+            name = "Gletscher Cola"
+            logo = "gletschercola.jpg"
+            href = "http://www.gletschercola.de"
+
 
     # systems
     [params.systems]
@@ -169,10 +217,30 @@ title = "Riding Bytes"
     [params.contact]
         title = "Contact"
         name = "Riding Bytes"
-        phone = "+49 160 5551008"
+        #phone = "+49 160 5551008"
         email = "hello@ridingbytes.com"
         address = "RIDING BYTES UG (haftungsbeschränkt), Einöde 49A, 87474 Buchenberg, Germany"
         web = "http://ridingbytes.com"
+
+        [params.contact.form]
+            title = "Contact us"
+            subtitle  = "Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!"
+            buttonText = "Send message"
+            to = "info@ridingbytes.com"
+
+        # 'warning' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Your Name *"
+            warning = "Please enter your name."
+        [params.contact.form.email]
+            text = "Your Email *"
+            warning = "Please enter your email address."
+        [params.contact.form.phone]
+            text = "Your Phone *"
+            warning = "Please enter your phone number."
+        [params.contact.form.message]
+            text = "Your Message *"
+            warning = "Please enter a message."
 
     # social media links
     [params.follow]
