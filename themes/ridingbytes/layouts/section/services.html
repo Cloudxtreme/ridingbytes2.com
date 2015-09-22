@@ -8,13 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body class="template-fourohfour">
-
-    <!-- loader -->
-    <!--<div id="loader-wrapper">
-      {{ partial "loader.html" . }}
-    </div>-->
-    <!-- /loader -->
+  <body class="template-services">
 
     <!-- sub-top -->
     <div id="sub-top-light">
@@ -27,7 +21,7 @@
     <!-- /sub-top -->
 
     <!-- main-top -->
-    <header id="header-wrapper-mp" class="sticky-menu-light section-404">
+    <header id="header-wrapper-mp" class="sticky-menu-light section-services">
 
       <div class="sticky-header header-light" role="navigation">
         <div class="container mp-nav">
@@ -44,11 +38,32 @@
       </div>
 
       <!-- Header -->
-      {{ partial "header-fourohfour.html" . }}
+      {{ partial "header-services.html" . }}
       <!-- /Header -->
 
     </header>
     <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      {{ range .Data.Pages }}
+      <div class="container">
+        <div class="row">
+          <!-- page content -->
+          <div id="{{ lower .Title }}" class="col-md-12 infoblock">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+    <!-- /main content -->
 
     <!-- Google Map -->
     <a class="gm-toggle-link">

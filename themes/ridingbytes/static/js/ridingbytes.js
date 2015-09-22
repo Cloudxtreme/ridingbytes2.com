@@ -5,9 +5,11 @@ jQuery(document).ready(function () {
     jQuery('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         var href = $anchor.attr('href');
-        href = href.replace("/", "");
+        var anchor = href.split("/").pop();
+        var $el = $(anchor);
+        if ($el.offset() === undefined) return;
         $('html, body').stop().animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(anchor).offset().top
         }, 1500);
         event.preventDefault();
     });

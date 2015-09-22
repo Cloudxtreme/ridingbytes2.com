@@ -42,14 +42,29 @@
 
     <!-- main content -->
     <div id="content">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              {{ .Content }}
-            </div>
+
+      <!-- center page header and description -->
+      <div class="e-block-centered">
+        <h2 class="hp-section-title">{{ .Title }}</h2>
+        <h3 class="hp-section-description">{{ .Description }}</h3>
+      </div>
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      <div class="container">
+        <div class="row">
+          <!-- page content -->
+          <div class="col-md-12">
+            {{ .Content }}
           </div>
         </div>
+      </div>
+
+
     </div>
+    <!-- /main content -->
 
     <!-- Google Map -->
     <a class="gm-toggle-link">
