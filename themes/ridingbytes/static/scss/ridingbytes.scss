@@ -66,6 +66,45 @@ $rb-white: #fff;
   }
 }
 
+.section-contact {
+  @include clearfix;
+  overflow: hidden; // added for pseudo-element
+  position: relative; // added for pseudo-element
+  &::before {
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $bg-light;
+    background: url("../img/sections/contact.png") no-repeat center center;
+    /*background-size: cover;*/
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+}
+
+.section-404 {
+  @include clearfix;
+  overflow: hidden; // added for pseudo-element
+  position: relative; // added for pseudo-element
+  &::before {
+    content: ' ';
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: $bg-light;
+    background: url("../img/sections/404.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+}
+
+/* Influences the Section behavior */
 #header-wrapper-mp #page-title {
   height: 500px;
   width: 100%;
@@ -99,3 +138,68 @@ $rb-white: #fff;
   color: #333; }
 #header-wrapper-mp #page-title .page-title-details ul li > a:hover {
   color: #de3627; }
+/* --- */
+
+
+
+#contact {
+    background-color: $bg-medium;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact .hp-section-title,
+#contact .hp-section-description {
+    color: #fff;
+}
+
+#contact .form-group {
+    margin-bottom: 25px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    padding: 20px;
+}
+
+#contact .form-group input.form-control {
+    height: auto;
+}
+
+#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+#contact .form-control:focus {
+    border-color: #A99977;
+    box-shadow: none;
+}
+
+#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+}
+
+#contact .text-danger {
+    color: #e74c3c;
+}

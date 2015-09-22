@@ -8,7 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body class="template-blog">
+  <body class="template-contact">
 
     <!-- loader -->
     <!--<div id="loader-wrapper">
@@ -27,7 +27,7 @@
     <!-- /sub-top -->
 
     <!-- main-top -->
-    <header id="header-wrapper-mp" class="sticky-menu-light section-blog">
+    <header id="header-wrapper-mp" class="sticky-menu-light section-contact">
 
       <div class="sticky-header header-light" role="navigation">
         <div class="container mp-nav">
@@ -44,7 +44,7 @@
       </div>
 
       <!-- Header -->
-      {{ partial "header-blog.html" . }}
+      {{ partial "header-contact.html" . }}
       <!-- /Header -->
 
     </header>
@@ -53,47 +53,48 @@
     <!-- main content -->
     <div id="content">
 
-      <div id="blog" class="e-block e-block-skin">
+      <div class="e-block e-block-skin e-bg-light">
 
+        <div class="dividewhite2"></div>
         <div class="container">
-
-          <!-- Decorative arrow -->
-          <div class="down-arrow">&nbsp;</div>
-          <!-- /Decorative arrow -->
-
-          <div class="dividewhite6"></div>
-
-          <div id="primary" role="main">
-
+          <div class="row">
             {{ range .Data.Pages }}
-
-            <article class="post">
-              <!-- Standard Post -->
-              <!-- Blog post attributes #2 -->
-              <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-              <div class="post-attrib">
-                <!--<div class="comment-baloon">75</div>-->
-                <div class="post-data">
-                  <div class="post-date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
-                  <div class="post-author">{{ .Params.author }}</div>
-                </div>
-              </div>
-              <!-- /Blog post attributes #2 -->
-
-              <!-- Post Content -->
+            <div class="col-md-4"></div>
+            <div class="col-md-4 infoblock text-center contact-address">
+              <div class="dividewhite2"></div>
+              <div class="rd-medal e-centered"><span class="icon-speech-bubble"></span></div>
+              <h2 class="font-accident-one-light">{{ .Title }}</h2>
               <p>{{ .Description }}</p>
-              <a role="button" href="{{ .Permalink }}" class="btn btn-default btn-lgr-str">More</a>
-            </article>
-
+              <span>
+                {{ .Content }}
+              </span>
+            </div>
+            <div class="col-md-4"></div>
             {{ end }}
-
           </div>
 
         </div>
 
       </div>
 
+      <!-- Contact Form -->
+      <div id="contact" class="e-block e-block-centered e-block-skin hp-team e-bg-light-texture" data-stellar-background-ratio="0.5">
+        {{ partial "contact-form.html" . }}
+      </div>
+      <!-- /Contact Form -->
+
     </div>
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+          <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
 
     <!-- footer -->
     <div id="footer">

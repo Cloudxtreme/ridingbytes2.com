@@ -794,7 +794,7 @@ input[type="text"], textarea {
   margin-bottom: 16px;
   padding: 7px 8px;
   max-width: 100%;
-  width: 240px;
+  /*width: 240px;*/
   border: 1px solid #666;
   border-radius: 3px;
   color: #959595;
@@ -810,11 +810,11 @@ input[type="text"], textarea {
 textarea {
   min-width: 97%;
   max-width: 97%;
-  resize: none;
-  -webkit-resize: none;
-  -moz-resize: none;
-  -webkit-resize: none;
-  -moz-resize: none; }
+  /*resize: none;*/
+  /*-webkit-resize: none;*/
+  /*-moz-resize: none;*/
+  /*-webkit-resize: none;*/
+  /*-moz-resize: none;*/ }
 
 input[type="submit"], input[type="reset"], input[type="button"], button, .button {
   display: inline-block;
