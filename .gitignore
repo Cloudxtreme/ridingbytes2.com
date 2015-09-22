@@ -1,1 +1,4 @@
 public
+.sass-cache
+*.map
+node_modules
