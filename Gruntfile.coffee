@@ -33,11 +33,35 @@ module.exports = (grunt) ->
                 options:
                     livereload: yes
 
+            static:
+                files: ["content/**", "data/**"]
+                tasks: ['hugo:dev']
+                options:
+                    livereload: yes
+
             sass:
                 files: ["themes/ridingbytes/static/scss/*.scss"]
                 tasks: ['sass:theme']
                 options:
                     livereload: yes
+
+        responsive_images:
+            process:
+                options:
+                    engine: 'gm'
+                    separator: '_'
+                    sizes: [
+                        { rename: false, width: '100%', height: '100%' }                # Copy the source.
+                        { name: '64x64', width: 64, height: 64, aspectRatio: false }    # Exact 64x64 via cropping.
+                        { name: '300', width: 300, aspectRatio: true }                  # At most 300px wide.
+                        { name: '400x250', width: 400, height: 250, aspectRatio: true } # At most 400px wide and 250px tall.
+                    ]
+                files: [
+                    expand: true
+                    cwd: 'img'
+                    src: '**.{png,jpg,jpeg,gif}'
+                    dest: 'site/static/img'
+                ]
 
     # dependencies
     grunt.loadNpmTasks 'grunt-contrib-connect'
@@ -45,6 +69,7 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-coffee'
     grunt.loadNpmTasks 'grunt-contrib-copy'
     grunt.loadNpmTasks 'grunt-contrib-watch'
+    grunt.loadNpmTasks 'grunt-responsive-images'
 
     # tasks
     grunt.registerTask 'default', ["connect", "watch"]
