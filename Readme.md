@@ -4,6 +4,8 @@ Template: Electron v1.2
 
 Theme Style: Opaque Menu Light
 
+Font: Oxygen -- https://www.google.com/fonts/specimen/Oxygen
+
 
 ## Development
 

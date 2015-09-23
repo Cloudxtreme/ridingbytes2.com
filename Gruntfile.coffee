@@ -33,15 +33,16 @@ module.exports = (grunt) ->
                     engine: 'im'  # im=ImageMagick, gm=GraphicsMagick
                     separator: '_'
                     sizes: [
-                        { rename: false, width: '100%', height: '100%' }                # Copy the source.
-                        { name: '64x64', width: 64, height: 64, aspectRatio: false }    # Exact 64x64 via cropping.
-                        { name: '300', width: 300, aspectRatio: true }                  # At most 300px wide.
-                        { name: '400x250', width: 400, height: 250, aspectRatio: true } # At most 400px wide and 250px tall.
+                        { rename: false, width: '100%', height: '100%' }   # Copy the source.
+                        { name: 'large', width: 1600, aspectRatio: true }  # At most 1600px wide
+                        { name: 'medium', width: 800, aspectRatio: true }  # At most 800px wide
+                        { name: 'small', width: 400, aspectRatio: true }   # At most 400px wide
+                        { name: 'tiny', width: 200, aspectRatio: true }    # At most 200px wide
                     ]
                 files: [
                     expand: true
                     cwd: 'images'
-                    src: '**.{png,jpg,jpeg,gif}'
+                    src: '**/**.{png,jpg,jpeg,gif}'
                     dest: 'src/themes/ridingbytes/static/img/'
                 ]
 
@@ -67,7 +68,7 @@ module.exports = (grunt) ->
                     livereload: yes
 
             images:
-                files: ['static/img/**']
+                files: ['images/**/*']
                 tasks: 'responsive_images'
 
 
