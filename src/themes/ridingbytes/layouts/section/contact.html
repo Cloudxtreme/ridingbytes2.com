@@ -8,13 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body class="template-contact">
-
-    <!-- loader -->
-    <!--<div id="loader-wrapper">
-      {{ partial "loader.html" . }}
-    </div>-->
-    <!-- /loader -->
+  <body class="template-contact-section">
 
     <!-- sub-top -->
     <div id="sub-top-light">
@@ -53,16 +47,19 @@
     <!-- main content -->
     <div id="content">
 
-      <div class="e-block e-block-skin e-bg-light">
+      <div class="e-block-skin e-bg-light">
 
-        <div class="dividewhite2"></div>
+        <!-- Decorative arrow -->
+        <div class="down-arrow">&nbsp;</div>
+        <!-- /Decorative arrow -->
+
         <div class="container">
           <div class="row">
             {{ range .Data.Pages }}
             <div class="col-md-4"></div>
             <div class="col-md-4 infoblock text-center contact-address">
               <div class="dividewhite2"></div>
-              <div class="rd-medal e-centered"><span class="icon-speech-bubble"></span></div>
+              <!--<div class="rd-medal e-centered"><span class="icon-speech-bubble"></span></div>-->
               <h2 class="font-accident-one-light">{{ .Title }}</h2>
               <p>{{ .Description }}</p>
               <span>
@@ -72,7 +69,6 @@
             <div class="col-md-4"></div>
             {{ end }}
           </div>
-
         </div>
 
       </div>
