@@ -4,3 +4,4 @@ build
 *.map
 node_modules
 src/themes/ridingbytes/static/img/sections
+vendor
