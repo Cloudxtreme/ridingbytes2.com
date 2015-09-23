@@ -1,7 +1,15 @@
 # Site settings
 
 baseurl = "http://replace-this-with-your-hugo-site.com/"
+theme = "ridingbytes"
 title = "Riding Bytes"
+languageCode = "en-us"
+copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
+
+
+[permalinks]
+    blog = "/:year/:month/:day/:slug/"
+
 
 [params]
 

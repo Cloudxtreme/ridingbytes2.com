@@ -3,55 +3,34 @@ module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON 'package.json'
 
+        # https://github.com/gruntjs/grunt-contrib-connect
         connect:
             server:
                 options:
                     port: 8000
                     hostname: '*'
-                    base: 'public'
+                    base: 'build/dev'
+                    protocol: 'http'
                     livereload: yes
+
+        # https://github.com/gruntjs/grunt-contrib-sass
         sass:
-            theme:
+            dev:
                 options:
                     style: "expanded"
                 files: [
                     expand: true
-                    cwd: "themes/ridingbytes/static/scss/"
+                    cwd: "src/themes/ridingbytes/static/scss"
                     src: ["*.scss"]
-                    dest: 'themes/ridingbytes/static/css'
+                    dest: 'src/themes/ridingbytes/static/css'
                     ext: '.css'
                 ]
-        watch:
-            options:
-                atBegin: true
-                livereload: true
-            theme:
-                files: ["themes/ridingbytes/**/*.*"]
-                tasks: ["hugo:dev"]
-                options:
-                    livereload: yes
-            config:
-                files: ["config.toml"]
-                tasks: ["hugo:dev"]
-                options:
-                    livereload: yes
 
-            static:
-                files: ["data/**", "content/**", "archetypes/**", "media/**"]
-                tasks: ['hugo:dev']
-                options:
-                    livereload: yes
-
-            sass:
-                files: ["themes/ridingbytes/static/scss/*.scss"]
-                tasks: ['sass:theme']
-                options:
-                    livereload: yes
-
+        # https://github.com/andismith/grunt-responsive-images
         responsive_images:
             process:
                 options:
-                    engine: 'gm'
+                    engine: 'im'  # im=ImageMagick, gm=GraphicsMagick
                     separator: '_'
                     sizes: [
                         { rename: false, width: '100%', height: '100%' }                # Copy the source.
@@ -61,10 +40,36 @@ module.exports = (grunt) ->
                     ]
                 files: [
                     expand: true
-                    cwd: 'img'
+                    cwd: 'images'
                     src: '**.{png,jpg,jpeg,gif}'
-                    dest: 'site/static/img'
+                    dest: 'src/themes/ridingbytes/static/img/'
                 ]
+
+        # https://github.com/gruntjs/grunt-contrib-watch
+        watch:
+            options:
+                 atBegin: true
+                 livereload: true
+
+            # watch the whole source directory for changes
+            hugo:
+                files: ["src/*.toml", "src/**/*.html", "src/**/*.css",
+                        "src/**/*.md", "src/**/*.png", "src/**/*.jpg"]
+                tasks: ["hugo:dev"]
+                options:
+                    livereload: yes
+
+            # watch all scss files for changes
+            sass:
+                files: ["src/**/*.scss"]
+                tasks: ['sass:dev']
+                options:
+                    livereload: yes
+
+            images:
+                files: ['static/img/**']
+                tasks: 'responsive_images'
+
 
     # dependencies
     grunt.loadNpmTasks 'grunt-contrib-connect'
@@ -74,13 +79,13 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-watch'
     grunt.loadNpmTasks 'grunt-responsive-images'
 
-    # tasks
+    # custom tasks
     grunt.registerTask 'default', ["connect", "watch"]
 
-    # hugo
+    # http://gohugo.io
     grunt.registerTask 'hugo', (target) ->
         done = @async()
-        args = ['--source=.', "--destination=public", "--theme=ridingbytes"]
+        args = ['--source=src', "--destination=../build/#{target}"]
         if target == 'dev'
             args.push '--baseUrl=http://localhost:8000'
             args.push '--buildDrafts=true'
