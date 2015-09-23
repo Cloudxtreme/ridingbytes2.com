@@ -38,6 +38,7 @@ module.exports = (grunt) ->
                         { name: 'medium', width: 800, aspectRatio: true }  # At most 800px wide
                         { name: 'small', width: 400, aspectRatio: true }   # At most 400px wide
                         { name: 'tiny', width: 200, aspectRatio: true }    # At most 200px wide
+                        { name: 'thumb', height: 64, aspectRatio: true }   # At most 64px high
                     ]
                 files: [
                     expand: true

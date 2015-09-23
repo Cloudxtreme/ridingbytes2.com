@@ -11,6 +11,11 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     blog = "/:year/:month/:day/:slug/"
 
 
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+
 [params]
 
     # To provide some metadata for search engines feel free to add a few

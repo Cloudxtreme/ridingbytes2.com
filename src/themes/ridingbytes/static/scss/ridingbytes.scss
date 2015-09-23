@@ -5,7 +5,7 @@
 
 1. Color Sheme / Colors, textures
 2. Sections (Like Blog, Services, Portfolio, Contact, ...)
-2. Nodes (Single Pages)
+3. Pages/Listings
 
 -------------------------------------------------------------------*/
 
@@ -61,11 +61,22 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 }
 
 /*------------------------------------------------------------------
-[3. Nodes]
+[3. Pages/Listings]
 */
 
 /* Default Page Style with a tiny RB Logo in the header */
 .default-page-single {
+  @include rb-section("../img/sections/default_tiny.jpg");
+  &::before {
+    background-size: 200px, auto, contain;
+    top: 200px;
+  }
+  &::after {
+    height: 200px;
+  }
+}
+
+.default-page-listing {
   @include rb-section("../img/sections/default_tiny.jpg");
   &::before {
     background-size: 200px, auto, contain;
@@ -108,10 +119,30 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 @media (max-width: 400px) {
 }
 
+/*------------------------------------------------------------------
+[X. Blog Posts]
+*/
+
+.post-summary {
+  padding-bottom: 1em;
+
+  /* Smaller content headings in blog listing view */
+  h1 {font-family: $font-accident-one-light;  font-size: 28px;}
+  h2 {font-family: $font-accident-one-normal; font-size: 24px;}
+  h3 {font-family: $font-accident-one-medium; font-size: 21px;}
+  h4 {font-family: $font-accident-one-medium; font-size: 16px;}
+  h5 {font-family: $font-accident-one-medium; font-size: 12px;}
+  h6 {font-family: $font-accident-one-bold;   font-size: 10px;}
+}
+
+
+
 
 /*------------------------------------------------------------------
 [XXX. TBD]
 */
+
+
 
 .hp-section-title {
 }

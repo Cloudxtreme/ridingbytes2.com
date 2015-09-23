@@ -4218,7 +4218,7 @@ a.gm-toggle-link {
 
 1. Color Sheme / Colors, textures
 2. Sections (Like Blog, Services, Portfolio, Contact, ...)
-2. Nodes (Single Pages)
+3. Pages/Listings
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -4335,7 +4335,7 @@ a.gm-toggle-link {
 }
 
 /*------------------------------------------------------------------
-[3. Nodes]
+[3. Pages/Listings]
 */
 /* Default Page Style with a tiny RB Logo in the header */
 .default-page-single {
@@ -4367,6 +4367,38 @@ a.gm-toggle-link {
   top: 200px;
 }
 .default-page-single::after {
+  height: 200px;
+}
+
+.default-page-listing {
+  overflow: hidden;
+  position: relative;
+}
+.default-page-listing:before, .default-page-listing:after {
+  content: "";
+  display: table;
+}
+.default-page-listing:after {
+  clear: both;
+}
+.default-page-listing::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/default_tiny.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+.default-page-listing::before {
+  background-size: 200px, auto, contain;
+  top: 200px;
+}
+.default-page-listing::after {
   height: 200px;
 }
 
@@ -4474,6 +4506,38 @@ a.gm-toggle-link {
     z-index: -1;
   }
 }
+/*------------------------------------------------------------------
+[X. Blog Posts]
+*/
+.post-summary {
+  padding-bottom: 1em;
+  /* Smaller content headings in blog listing view */
+}
+.post-summary h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 28px;
+}
+.post-summary h2 {
+  font-family: Novecentosanswide-Normal, sans-serif;
+  font-size: 24px;
+}
+.post-summary h3 {
+  font-family: Novecentosanswide-Medium, sans-serif;
+  font-size: 21px;
+}
+.post-summary h4 {
+  font-family: Novecentosanswide-Medium, sans-serif;
+  font-size: 16px;
+}
+.post-summary h5 {
+  font-family: Novecentosanswide-Medium, sans-serif;
+  font-size: 12px;
+}
+.post-summary h6 {
+  font-family: Novecentosanswide-Bold, sans-serif;
+  font-size: 10px;
+}
+
 /*------------------------------------------------------------------
 [XXX. TBD]
 */
