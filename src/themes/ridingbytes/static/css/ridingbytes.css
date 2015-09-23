@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -4212,6 +4213,270 @@ a.gm-toggle-link {
     height: 80px;
   }
 }
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Color Sheme / Colors, textures
+2. Sections (Like Blog, Services, Portfolio, Contact, ...)
+2. Nodes (Single Pages)
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[1. Color Sheme / Colors, textures]
+*/
+/* official RIDING BYTES colors */
+/* Primärfarbe: Gold */
+/* Primärfarbe: Blau */
+/* Sekundärfarbe: Cyan */
+/* Sekundärfarbe: Orange */
+/*------------------------------------------------------------------
+[2. Sections]
+*/
+/* Default section style from Electron v1.2 */
+/* Section Images */
+.section-blog {
+  overflow: hidden;
+  position: relative;
+}
+.section-blog:before, .section-blog:after {
+  content: "";
+  display: table;
+}
+.section-blog:after {
+  clear: both;
+}
+.section-blog::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/blog_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.section-services {
+  overflow: hidden;
+  position: relative;
+}
+.section-services:before, .section-services:after {
+  content: "";
+  display: table;
+}
+.section-services:after {
+  clear: both;
+}
+.section-services::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/services_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.section-contact {
+  overflow: hidden;
+  position: relative;
+}
+.section-contact:before, .section-contact:after {
+  content: "";
+  display: table;
+}
+.section-contact:after {
+  clear: both;
+}
+.section-contact::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/contact_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.section-404 {
+  overflow: hidden;
+  position: relative;
+}
+.section-404:before, .section-404:after {
+  content: "";
+  display: table;
+}
+.section-404:after {
+  clear: both;
+}
+.section-404::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/404_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+/*------------------------------------------------------------------
+[3. Nodes]
+*/
+/* Default Page Style with a tiny RB Logo in the header */
+.default-page-single {
+  overflow: hidden;
+  position: relative;
+}
+.default-page-single:before, .default-page-single:after {
+  content: "";
+  display: table;
+}
+.default-page-single:after {
+  clear: both;
+}
+.default-page-single::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/default_tiny.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+.default-page-single::before {
+  background-size: 200px, auto, contain;
+  top: 200px;
+}
+.default-page-single::after {
+  height: 200px;
+}
+
+/*------------------------------------------------------------------
+[4. Media Query]
+*/
+@media (max-width: 768px) {
+  .section-blog {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-blog:before, .section-blog:after {
+    content: "";
+    display: table;
+  }
+  .section-blog:after {
+    clear: both;
+  }
+  .section-blog::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: #e8e8e8;
+    background: url("../img/sections/blog_medium.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .section-services {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-services:before, .section-services:after {
+    content: "";
+    display: table;
+  }
+  .section-services:after {
+    clear: both;
+  }
+  .section-services::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: #e8e8e8;
+    background: url("../img/sections/services_medium.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .section-contact {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-contact:before, .section-contact:after {
+    content: "";
+    display: table;
+  }
+  .section-contact:after {
+    clear: both;
+  }
+  .section-contact::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: #e8e8e8;
+    background: url("../img/sections/contact_medium.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .section-404 {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-404:before, .section-404:after {
+    content: "";
+    display: table;
+  }
+  .section-404:after {
+    clear: both;
+  }
+  .section-404::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: #e8e8e8;
+    background: url("../img/sections/404_medium.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+  }
+}
+/*------------------------------------------------------------------
+[XXX. TBD]
+*/
 .hp-section-description {
   font-family: "Georgia", serif;
   font-style: oblique;
@@ -4245,106 +4510,6 @@ a.gm-toggle-link {
 }
 .hp-customers .client h4 {
   font-family: Novecentosanswide-Light, sans-serif;
-}
-
-.section-blog {
-  overflow: hidden;
-  position: relative;
-}
-.section-blog:before, .section-blog:after {
-  content: "";
-  display: table;
-}
-.section-blog:after {
-  clear: both;
-}
-.section-blog::before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 120px;
-  left: 0;
-  background-color: #e8e8e8;
-  background: url("../img/sections/blog.jpg") no-repeat top center;
-  background-size: cover;
-  will-change: transform;
-  z-index: -1;
-}
-
-.section-services {
-  overflow: hidden;
-  position: relative;
-}
-.section-services:before, .section-services:after {
-  content: "";
-  display: table;
-}
-.section-services:after {
-  clear: both;
-}
-.section-services::before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #e8e8e8;
-  background: url("../img/sections/services.jpg") no-repeat center center;
-  background-size: cover;
-  will-change: transform;
-  z-index: -1;
-}
-
-.section-contact {
-  overflow: hidden;
-  position: relative;
-}
-.section-contact:before, .section-contact:after {
-  content: "";
-  display: table;
-}
-.section-contact:after {
-  clear: both;
-}
-.section-contact::before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 120px;
-  left: 0;
-  background-color: #e8e8e8;
-  background: url("../img/sections/contact.png") no-repeat top center;
-  /*background-size: inherit;*/
-  will-change: transform;
-  z-index: -1;
-}
-
-.section-404 {
-  overflow: hidden;
-  position: relative;
-}
-.section-404:before, .section-404:after {
-  content: "";
-  display: table;
-}
-.section-404:after {
-  clear: both;
-}
-.section-404::before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 120px;
-  left: 0;
-  background-color: #e8e8e8;
-  background: url("../img/sections/404.jpg") no-repeat top center;
-  background-size: cover;
-  will-change: transform;
-  z-index: -1;
 }
 
 /* Influences the Section behavior */
