@@ -126,7 +126,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         title = "Services"
         description = "The Internet is our Riding Stable"
         [[params.services.list]]
-            title = "Web Development"
+            title = "Development"
             description = ""
             cls = "icon-box"
             href = "/services/#development"
@@ -184,7 +184,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         [[params.team.members]]
             img = "lucky.jpg"
             name = "Lucky Luke"
-            position = "Byte Riding Horse"
+            position = "Leadership Coach and Mentor"
             social = [
                 ["fa-twitter", "https://twitter.com/ridingbytes"],
                 ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],

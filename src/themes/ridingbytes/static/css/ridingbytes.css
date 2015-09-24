@@ -4404,11 +4404,11 @@ a.gm-toggle-link {
 }
 .template-default-page-single #content h1 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
 }
 .template-default-page-single #content h2 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
 }
 .template-default-page-single #content h3 {
   font-family: Novecentosanswide-Light, sans-serif;
@@ -4465,11 +4465,11 @@ a.gm-toggle-link {
 }
 .template-default-page-listing #content h1 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
 }
 .template-default-page-listing #content h2 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
 }
 .template-default-page-listing #content h3 {
   font-family: Novecentosanswide-Light, sans-serif;
@@ -4488,6 +4488,38 @@ a.gm-toggle-link {
   font-size: 12px;
 }
 
+/* services section*/
+.template-services-section {
+  /* smaller content fonts */
+}
+.template-services-section #content {
+  padding-bottom: 2em;
+}
+.template-services-section #content h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 34px;
+}
+.template-services-section #content h2 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 26px;
+}
+.template-services-section #content h3 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 24px;
+}
+.template-services-section #content h4 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 21px;
+}
+.template-services-section #content h5 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 16px;
+}
+.template-services-section #content h6 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 12px;
+}
+
 /* about section*/
 .template-about-section {
   /* smaller content fonts */
@@ -4497,11 +4529,11 @@ a.gm-toggle-link {
 }
 .template-about-section #content h1 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
 }
 .template-about-section #content h2 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
 }
 .template-about-section #content h3 {
   font-family: Novecentosanswide-Light, sans-serif;
@@ -4550,11 +4582,11 @@ a.gm-toggle-link {
 }
 .post-content h1 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
 }
 .post-content h2 {
   font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 28px;
+  font-size: 26px;
 }
 .post-content h3 {
   font-family: Novecentosanswide-Light, sans-serif;
@@ -4873,6 +4905,16 @@ a.gm-toggle-link {
 /*------------------------------------------------------------------
 [7. Global]
 */
+.image-left {
+  background-color: white;
+  text-align: left;
+}
+
+.image-right {
+  background-color: white;
+  text-align: right;
+}
+
 /* Influences the Section behavior */
 #header-wrapper-mp #page-title {
   height: 500px;

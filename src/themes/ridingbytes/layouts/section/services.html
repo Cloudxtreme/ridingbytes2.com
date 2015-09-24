@@ -52,15 +52,21 @@
       <!-- /Decorative arrow -->
 
       {{ range .Data.Pages }}
-      <div class="container">
-        <div class="row">
-          <!-- page content -->
-          <div id="{{ lower .Title }}" class="col-md-12 infoblock">
-            {{ .Content }}
+      <div id="{{ lower .Title }}" class="e-block-ins e-block-skin" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row">
+            <!-- page content -->
+            <div class="col-md-12">
+              {{ .Content }}
+            </div>
           </div>
         </div>
       </div>
       {{ end }}
+
+      <!-- Systems -->
+      <!--{{ partial "systems.html" . }}-->
+      <!-- /Systems -->
 
     </div>
     <!-- /main content -->

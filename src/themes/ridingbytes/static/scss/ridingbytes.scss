@@ -31,8 +31,8 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 */
 
 @mixin rb-content-fonts {
-  h1 {font-family: $font-accident-one-light; font-size: 32px;}
-  h2 {font-family: $font-accident-one-light; font-size: 28px;}
+  h1 {font-family: $font-accident-one-light; font-size: 34px;}
+  h2 {font-family: $font-accident-one-light; font-size: 26px;}
   h3 {font-family: $font-accident-one-light; font-size: 24px;}
   h4 {font-family: $font-accident-one-light; font-size: 21px;}
   h5 {font-family: $font-accident-one-light; font-size: 16px;}
@@ -113,6 +113,15 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
     }
   }
 
+  /* smaller content fonts */
+  #content {
+    @include rb-content-fonts;
+    padding-bottom: 2em;
+  }
+}
+
+/* services section*/
+.template-services-section {
   /* smaller content fonts */
   #content {
     @include rb-content-fonts;
@@ -288,6 +297,15 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 /*------------------------------------------------------------------
 [7. Global]
 */
+
+.image-left {
+  background-color: white;
+  text-align: left;
+}
+.image-right {
+  background-color: white;
+  text-align: right;
+}
 
 /* Influences the Section behavior */
 #header-wrapper-mp #page-title {
