@@ -4345,22 +4345,22 @@ a.gm-toggle-link {
 [4. Pages/Listings]
 */
 /* default single view */
-.template-default-page-listing {
+.template-default-page-single {
   /* Default Page Style with a tiny RB Logo in the header */
   /* smaller content fonts */
 }
-.template-default-page-listing .default-page-single {
+.template-default-page-single .default-page-single {
   overflow: hidden;
   position: relative;
 }
-.template-default-page-listing .default-page-single:before, .template-default-page-listing .default-page-single:after {
+.template-default-page-single .default-page-single:before, .template-default-page-single .default-page-single:after {
   content: "";
   display: table;
 }
-.template-default-page-listing .default-page-single:after {
+.template-default-page-single .default-page-single:after {
   clear: both;
 }
-.template-default-page-listing .default-page-single::before {
+.template-default-page-single .default-page-single::before {
   content: ' ';
   position: fixed;
   width: 100%;
@@ -4373,31 +4373,31 @@ a.gm-toggle-link {
   will-change: transform;
   z-index: -1;
 }
-.template-default-page-listing .default-page-single::before {
+.template-default-page-single .default-page-single::before {
   top: 0px;
   background-position: center;
 }
-.template-default-page-listing #content h1 {
+.template-default-page-single #content h1 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 32px;
 }
-.template-default-page-listing #content h2 {
+.template-default-page-single #content h2 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 28px;
 }
-.template-default-page-listing #content h3 {
+.template-default-page-single #content h3 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 24px;
 }
-.template-default-page-listing #content h4 {
+.template-default-page-single #content h4 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 21px;
 }
-.template-default-page-listing #content h5 {
+.template-default-page-single #content h5 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 16px;
 }
-.template-default-page-listing #content h6 {
+.template-default-page-single #content h6 {
   font-family: Novecentosanswide-Light, sans-serif;
   font-size: 12px;
 }
