@@ -66,24 +66,18 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 
 /* Default Page Style with a tiny RB Logo in the header */
 .default-page-single {
-  @include rb-section("../img/sections/default_tiny.jpg");
+  @include rb-section("../img/sections/default_large.jpg");
   &::before {
-    background-size: 200px, auto, contain;
-    top: 200px;
-  }
-  &::after {
-    height: 200px;
+    top: 0px;
+    background-position: center;
   }
 }
 
 .default-page-listing {
-  @include rb-section("../img/sections/default_tiny.jpg");
+  @include rb-section("../img/sections/default_large.jpg");
   &::before {
-    background-size: 200px, auto, contain;
-    top: 200px;
-  }
-  &::after {
-    height: 200px;
+    top: 0px;
+    background-position: center;
   }
 }
 
@@ -114,25 +108,35 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   .section-404 {
     @include rb-section("../img/sections/404_medium.jpg");
   }
+  .blog-page-single {
+    @include rb-section("../img/sections/blogpost_medium.jpg");
+  }
+  .default-page-single {
+    @include rb-section("../img/sections/default_medium.jpg");
+  }
 }
 
 @media (max-width: 400px) {
 }
 
 /*------------------------------------------------------------------
-[X. Blog Posts]
+[5. Blog Posts]
 */
 
-.post-summary {
+.blog-page-single {
+  @include rb-section("../img/sections/blogpost_large.jpg");
+}
+
+.post-content {
   padding-bottom: 1em;
 
   /* Smaller content headings in blog listing view */
-  h1 {font-family: $font-accident-one-light;  font-size: 28px;}
-  h2 {font-family: $font-accident-one-normal; font-size: 24px;}
-  h3 {font-family: $font-accident-one-medium; font-size: 21px;}
-  h4 {font-family: $font-accident-one-medium; font-size: 16px;}
-  h5 {font-family: $font-accident-one-medium; font-size: 12px;}
-  h6 {font-family: $font-accident-one-bold;   font-size: 10px;}
+  h1 {font-family: $font-accident-one-light; font-size: 32px;}
+  h2 {font-family: $font-accident-one-light; font-size: 28px;}
+  h3 {font-family: $font-accident-one-light; font-size: 24px;}
+  h4 {font-family: $font-accident-one-light; font-size: 21px;}
+  h5 {font-family: $font-accident-one-light; font-size: 16px;}
+  h6 {font-family: $font-accident-one-light; font-size: 12px;}
 }
 
 

@@ -24,6 +24,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     description = "Riding Bytes UG (haftungsbeschränkt)"
     keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
     dateformat = "Mon, Jan 2, 2006"
+    disqusShortname = "ridingbytes"
 
 
     # navigation
@@ -68,6 +69,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         [params.sections.blog]
             title = "Blog"
             subtitle = ""
+            href = "/blog"
 
         # services section /services
         [params.sections.services]

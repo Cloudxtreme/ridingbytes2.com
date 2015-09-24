@@ -37,6 +37,10 @@
         </div>
       </div>
 
+      <!-- Header -->
+      {{ partial "header-default.html" . }}
+      <!-- /Header -->
+
     </header>
     <!-- /main-top -->
 
@@ -44,7 +48,7 @@
     <div id="content">
 
       <!-- Decorative arrow -->
-      <!--<div class="down-arrow">&nbsp;</div>-->
+      <div class="down-arrow">&nbsp;</div>
       <!-- /Decorative arrow -->
 
       {{ range .Data.Pages }}

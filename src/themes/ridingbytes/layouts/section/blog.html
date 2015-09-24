@@ -165,7 +165,7 @@
               {{ range .Data.Pages }}
               <!-- single blog post -->
               <article class="post">
-                <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                 <!-- Blog post attributes #2 -->
                 <div class="post-attrib">
                   <!--<div class="comment-baloon">75</div>-->
@@ -177,7 +177,7 @@
                 <!-- /Blog post attributes #2 -->
 
                 <!-- Post Content -->
-                <div class="post-summary">{{ .Summary }}</div>
+                <div class="post-content">{{ .Summary }}</div>
                 <!-- /Post Content -->
                 <a role="button" href="{{ .Permalink }}" class="btn btn-default btn-lgr-str">Read More</a>
               </article>
