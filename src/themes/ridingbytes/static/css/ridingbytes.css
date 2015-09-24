@@ -4291,6 +4291,31 @@ a.gm-toggle-link {
   z-index: -1;
 }
 
+.section-about {
+  overflow: hidden;
+  position: relative;
+}
+.section-about:before, .section-about:after {
+  content: "";
+  display: table;
+}
+.section-about:after {
+  clear: both;
+}
+.section-about::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/about_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
 .section-contact {
   overflow: hidden;
   position: relative;
@@ -4463,7 +4488,38 @@ a.gm-toggle-link {
   font-size: 12px;
 }
 
-/* blog section*/
+/* about section*/
+.template-about-section {
+  /* smaller content fonts */
+}
+.template-about-section #content {
+  padding-bottom: 2em;
+}
+.template-about-section #content h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 32px;
+}
+.template-about-section #content h2 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 28px;
+}
+.template-about-section #content h3 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 24px;
+}
+.template-about-section #content h4 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 21px;
+}
+.template-about-section #content h5 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 16px;
+}
+.template-about-section #content h6 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 12px;
+}
+
 .blog-page-single {
   overflow: hidden;
   position: relative;
@@ -4646,6 +4702,31 @@ a.gm-toggle-link {
     left: 0;
     background-color: #e8e8e8;
     background: url("../img/sections/contact_medium.jpg") no-repeat top center;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .section-about {
+    overflow: hidden;
+    position: relative;
+  }
+  .section-about:before, .section-about:after {
+    content: "";
+    display: table;
+  }
+  .section-about:after {
+    clear: both;
+  }
+  .section-about::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 120px;
+    left: 0;
+    background-color: #e8e8e8;
+    background: url("../img/sections/about_medium.jpg") no-repeat top center;
     background-size: cover;
     will-change: transform;
     z-index: -1;

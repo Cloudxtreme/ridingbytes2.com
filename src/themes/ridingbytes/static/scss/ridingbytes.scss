@@ -70,6 +70,9 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 .section-services {
   @include rb-section("../img/sections/services_large.jpg");
 }
+.section-about {
+  @include rb-section("../img/sections/about_large.jpg");
+}
 .section-contact {
   @include rb-section("../img/sections/contact_large.jpg");
 }
@@ -117,8 +120,13 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   }
 }
 
-/* blog section*/
-.template-blog-section {
+/* about section*/
+.template-about-section {
+  /* smaller content fonts */
+  #content {
+    @include rb-content-fonts;
+    padding-bottom: 2em;
+  }
 }
 
 .blog-page-single {
@@ -208,6 +216,9 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   }
   .section-contact {
     @include rb-section("../img/sections/contact_medium.jpg");
+  }
+  .section-about {
+    @include rb-section("../img/sections/about_medium.jpg");
   }
   .section-404 {
     @include rb-section("../img/sections/404_medium.jpg");
