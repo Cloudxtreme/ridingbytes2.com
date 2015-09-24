@@ -4,8 +4,12 @@
 [Table of contents]
 
 1. Color Sheme / Colors, textures
-2. Sections (Like Blog, Services, Portfolio, Contact, ...)
-3. Pages/Listings
+2. Basic Styles
+3. Sections (Like Blog, Services, Portfolio, Contact, ...)
+4. Pages/Listings
+5. Media Query
+5. Homepage
+5. Global
 
 -------------------------------------------------------------------*/
 
@@ -23,7 +27,20 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 
 
 /*------------------------------------------------------------------
-[2. Sections]
+[2. Basic Styles]
+*/
+
+@mixin rb-content-fonts {
+  h1 {font-family: $font-accident-one-light; font-size: 32px;}
+  h2 {font-family: $font-accident-one-light; font-size: 28px;}
+  h3 {font-family: $font-accident-one-light; font-size: 24px;}
+  h4 {font-family: $font-accident-one-light; font-size: 21px;}
+  h5 {font-family: $font-accident-one-light; font-size: 16px;}
+  h6 {font-family: $font-accident-one-light; font-size: 12px;}
+}
+
+/*------------------------------------------------------------------
+[3. Sections]
 */
 
 /* Default section style from Electron v1.2 */
@@ -61,29 +78,116 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 }
 
 /*------------------------------------------------------------------
-[3. Pages/Listings]
+[4. Pages/Listings]
 */
 
-/* Default Page Style with a tiny RB Logo in the header */
-.default-page-single {
-  @include rb-section("../img/sections/default_large.jpg");
-  &::before {
-    top: 0px;
-    background-position: center;
+/* default single view */
+.template-default-page-listing {
+
+  /* Default Page Style with a tiny RB Logo in the header */
+  .default-page-single {
+    @include rb-section("../img/sections/default_large.jpg");
+    &::before {
+      top: 0px;
+      background-position: center;
+    }
+  }
+
+  /* smaller content fonts */
+  #content {
+    @include rb-content-fonts;
   }
 }
 
-.default-page-listing {
-  @include rb-section("../img/sections/default_large.jpg");
-  &::before {
-    top: 0px;
+/* default listing view - e.g. used for taxonomies */
+.template-default-page-listing {
+  /* header */
+  .default-page-listing {
+    @include rb-section("../img/sections/default_large.jpg");
+    &::before {
+      top: 0px;
+      background-position: center;
+    }
+  }
+
+  /* smaller content fonts */
+  #content {
+    @include rb-content-fonts;
+    padding-bottom: 2em;
+  }
+}
+
+/* blog section*/
+.template-blog-section {
+}
+
+.blog-page-single {
+  @include rb-section("../img/sections/blogpost_large.jpg");
+}
+
+.post-content {
+  @include rb-content-fonts;
+  padding-bottom: 2em;
+}
+
+/* contact section */
+.template-contact-section {
+  /* Contact Email Form */
+  #contact {
+    background-color: $bg-medium;
+    background-image: url(../img/map-image.png);
     background-position: center;
+    background-repeat: no-repeat;
+  }
+  #contact .hp-section-title,
+  #contact .hp-section-description {
+    color: #fff;
+  }
+  #contact .form-group {
+    margin-bottom: 25px;
+  }
+  #contact .form-group input,
+  #contact .form-group textarea {
+    padding: 20px;
+  }
+  #contact .form-group input.form-control {
+    height: auto;
+  }
+  #contact .form-group textarea.form-control {
+    height: 236px;
+  }
+  #contact .form-control:focus {
+    border-color: #A99977;
+    box-shadow: none;
+  }
+  #contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+  }
+  #contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+  }
+  #contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+  }
+  #contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb;
+  }
+  #contact .text-danger {
+    color: #e74c3c;
   }
 }
 
 
 /*------------------------------------------------------------------
-[4. Media Query]
+[5. Media Query]
 */
 
 @media (max-width: 1200px) {
@@ -120,33 +224,8 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 }
 
 /*------------------------------------------------------------------
-[5. Blog Posts]
+[6. Homepage]
 */
-
-.blog-page-single {
-  @include rb-section("../img/sections/blogpost_large.jpg");
-}
-
-.post-content {
-  padding-bottom: 1em;
-
-  /* Smaller content headings in blog listing view */
-  h1 {font-family: $font-accident-one-light; font-size: 32px;}
-  h2 {font-family: $font-accident-one-light; font-size: 28px;}
-  h3 {font-family: $font-accident-one-light; font-size: 24px;}
-  h4 {font-family: $font-accident-one-light; font-size: 21px;}
-  h5 {font-family: $font-accident-one-light; font-size: 16px;}
-  h6 {font-family: $font-accident-one-light; font-size: 12px;}
-}
-
-
-
-
-/*------------------------------------------------------------------
-[XXX. TBD]
-*/
-
-
 
 .hp-section-title {
 }
@@ -192,6 +271,10 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 }
 
 
+/*------------------------------------------------------------------
+[7. Global]
+*/
+
 /* Influences the Section behavior */
 #header-wrapper-mp #page-title {
   height: 500px;
@@ -226,58 +309,3 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   color: #333; }
 #header-wrapper-mp #page-title .page-title-details ul li > a:hover {
   color: #de3627; }
-/* --- */
-
-
-/* Contact Email Form */
-#contact {
-  background-color: $bg-medium;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#contact .hp-section-title,
-#contact .hp-section-description {
-  color: #fff;
-}
-#contact .form-group {
-  margin-bottom: 25px;
-}
-#contact .form-group input,
-#contact .form-group textarea {
-  padding: 20px;
-}
-#contact .form-group input.form-control {
-  height: auto;
-}
-#contact .form-group textarea.form-control {
-  height: 236px;
-}
-#contact .form-control:focus {
-  border-color: #A99977;
-  box-shadow: none;
-}
-#contact::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-#contact:-moz-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-#contact::-moz-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-#contact:-ms-input-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-#contact .text-danger {
-  color: #e74c3c;
-}
-/* --- */

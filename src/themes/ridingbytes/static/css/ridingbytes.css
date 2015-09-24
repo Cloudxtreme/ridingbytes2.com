@@ -4217,8 +4217,12 @@ a.gm-toggle-link {
 [Table of contents]
 
 1. Color Sheme / Colors, textures
-2. Sections (Like Blog, Services, Portfolio, Contact, ...)
-3. Pages/Listings
+2. Basic Styles
+3. Sections (Like Blog, Services, Portfolio, Contact, ...)
+4. Pages/Listings
+5. Media Query
+5. Homepage
+5. Global
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -4230,7 +4234,10 @@ a.gm-toggle-link {
 /* Sekundärfarbe: Cyan */
 /* Sekundärfarbe: Orange */
 /*------------------------------------------------------------------
-[2. Sections]
+[2. Basic Styles]
+*/
+/*------------------------------------------------------------------
+[3. Sections]
 */
 /* Default section style from Electron v1.2 */
 /* Section Images */
@@ -4335,21 +4342,25 @@ a.gm-toggle-link {
 }
 
 /*------------------------------------------------------------------
-[3. Pages/Listings]
+[4. Pages/Listings]
 */
-/* Default Page Style with a tiny RB Logo in the header */
-.default-page-single {
+/* default single view */
+.template-default-page-listing {
+  /* Default Page Style with a tiny RB Logo in the header */
+  /* smaller content fonts */
+}
+.template-default-page-listing .default-page-single {
   overflow: hidden;
   position: relative;
 }
-.default-page-single:before, .default-page-single:after {
+.template-default-page-listing .default-page-single:before, .template-default-page-listing .default-page-single:after {
   content: "";
   display: table;
 }
-.default-page-single:after {
+.template-default-page-listing .default-page-single:after {
   clear: both;
 }
-.default-page-single::before {
+.template-default-page-listing .default-page-single::before {
   content: ' ';
   position: fixed;
   width: 100%;
@@ -4362,23 +4373,52 @@ a.gm-toggle-link {
   will-change: transform;
   z-index: -1;
 }
-.default-page-single::before {
+.template-default-page-listing .default-page-single::before {
   top: 0px;
   background-position: center;
+}
+.template-default-page-listing #content h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 32px;
+}
+.template-default-page-listing #content h2 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 28px;
+}
+.template-default-page-listing #content h3 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 24px;
+}
+.template-default-page-listing #content h4 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 21px;
+}
+.template-default-page-listing #content h5 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 16px;
+}
+.template-default-page-listing #content h6 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 12px;
 }
 
-.default-page-listing {
+/* default listing view - e.g. used for taxonomies */
+.template-default-page-listing {
+  /* header */
+  /* smaller content fonts */
+}
+.template-default-page-listing .default-page-listing {
   overflow: hidden;
   position: relative;
 }
-.default-page-listing:before, .default-page-listing:after {
+.template-default-page-listing .default-page-listing:before, .template-default-page-listing .default-page-listing:after {
   content: "";
   display: table;
 }
-.default-page-listing:after {
+.template-default-page-listing .default-page-listing:after {
   clear: both;
 }
-.default-page-listing::before {
+.template-default-page-listing .default-page-listing::before {
   content: ' ';
   position: fixed;
   width: 100%;
@@ -4391,13 +4431,149 @@ a.gm-toggle-link {
   will-change: transform;
   z-index: -1;
 }
-.default-page-listing::before {
+.template-default-page-listing .default-page-listing::before {
   top: 0px;
   background-position: center;
+}
+.template-default-page-listing #content {
+  padding-bottom: 2em;
+}
+.template-default-page-listing #content h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 32px;
+}
+.template-default-page-listing #content h2 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 28px;
+}
+.template-default-page-listing #content h3 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 24px;
+}
+.template-default-page-listing #content h4 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 21px;
+}
+.template-default-page-listing #content h5 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 16px;
+}
+.template-default-page-listing #content h6 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 12px;
+}
+
+/* blog section*/
+.blog-page-single {
+  overflow: hidden;
+  position: relative;
+}
+.blog-page-single:before, .blog-page-single:after {
+  content: "";
+  display: table;
+}
+.blog-page-single:after {
+  clear: both;
+}
+.blog-page-single::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 120px;
+  left: 0;
+  background-color: #e8e8e8;
+  background: url("../img/sections/blogpost_large.jpg") no-repeat top center;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+.post-content {
+  padding-bottom: 2em;
+}
+.post-content h1 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 32px;
+}
+.post-content h2 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 28px;
+}
+.post-content h3 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 24px;
+}
+.post-content h4 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 21px;
+}
+.post-content h5 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 16px;
+}
+.post-content h6 {
+  font-family: Novecentosanswide-Light, sans-serif;
+  font-size: 12px;
+}
+
+/* contact section */
+.template-contact-section {
+  /* Contact Email Form */
+}
+.template-contact-section #contact {
+  background-color: #666;
+  background-image: url(../img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.template-contact-section #contact .hp-section-title,
+.template-contact-section #contact .hp-section-description {
+  color: #fff;
+}
+.template-contact-section #contact .form-group {
+  margin-bottom: 25px;
+}
+.template-contact-section #contact .form-group input,
+.template-contact-section #contact .form-group textarea {
+  padding: 20px;
+}
+.template-contact-section #contact .form-group input.form-control {
+  height: auto;
+}
+.template-contact-section #contact .form-group textarea.form-control {
+  height: 236px;
+}
+.template-contact-section #contact .form-control:focus {
+  border-color: #A99977;
+  box-shadow: none;
+}
+.template-contact-section #contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb;
+}
+.template-contact-section #contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb;
+}
+.template-contact-section #contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb;
+}
+.template-contact-section #contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb;
+}
+.template-contact-section #contact .text-danger {
+  color: #e74c3c;
 }
 
 /*------------------------------------------------------------------
-[4. Media Query]
+[5. Media Query]
 */
 @media (max-width: 768px) {
   .section-blog {
@@ -4551,64 +4727,7 @@ a.gm-toggle-link {
   }
 }
 /*------------------------------------------------------------------
-[5. Blog Posts]
-*/
-.blog-page-single {
-  overflow: hidden;
-  position: relative;
-}
-.blog-page-single:before, .blog-page-single:after {
-  content: "";
-  display: table;
-}
-.blog-page-single:after {
-  clear: both;
-}
-.blog-page-single::before {
-  content: ' ';
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 120px;
-  left: 0;
-  background-color: #e8e8e8;
-  background: url("../img/sections/blogpost_large.jpg") no-repeat top center;
-  background-size: cover;
-  will-change: transform;
-  z-index: -1;
-}
-
-.post-content {
-  padding-bottom: 1em;
-  /* Smaller content headings in blog listing view */
-}
-.post-content h1 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 32px;
-}
-.post-content h2 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 28px;
-}
-.post-content h3 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 24px;
-}
-.post-content h4 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 21px;
-}
-.post-content h5 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 16px;
-}
-.post-content h6 {
-  font-family: Novecentosanswide-Light, sans-serif;
-  font-size: 12px;
-}
-
-/*------------------------------------------------------------------
-[XXX. TBD]
+[6. Homepage]
 */
 .hp-section-description {
   font-family: "Georgia", serif;
@@ -4645,6 +4764,9 @@ a.gm-toggle-link {
   font-family: Novecentosanswide-Light, sans-serif;
 }
 
+/*------------------------------------------------------------------
+[7. Global]
+*/
 /* Influences the Section behavior */
 #header-wrapper-mp #page-title {
   height: 500px;
@@ -4694,71 +4816,5 @@ a.gm-toggle-link {
 #header-wrapper-mp #page-title .page-title-details ul li > a:hover {
   color: #de3627;
 }
-
-/* --- */
-/* Contact Email Form */
-#contact {
-  background-color: #666;
-  background-image: url(../img/map-image.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#contact .hp-section-title,
-#contact .hp-section-description {
-  color: #fff;
-}
-
-#contact .form-group {
-  margin-bottom: 25px;
-}
-
-#contact .form-group input,
-#contact .form-group textarea {
-  padding: 20px;
-}
-
-#contact .form-group input.form-control {
-  height: auto;
-}
-
-#contact .form-group textarea.form-control {
-  height: 236px;
-}
-
-#contact .form-control:focus {
-  border-color: #A99977;
-  box-shadow: none;
-}
-
-#contact::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-
-#contact:-moz-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-
-#contact::-moz-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-
-#contact:-ms-input-placeholder {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #bbb;
-}
-
-#contact .text-danger {
-  color: #e74c3c;
-}
-
-/* --- */
 
 /*# sourceMappingURL=ridingbytes.css.map */

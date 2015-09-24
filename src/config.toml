@@ -296,6 +296,13 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     [params.flickr]
         title = "Flickr Feed"
 
+    # twitter feed
+    [params.twitter]
+        title = "Latest News"
+        login = "ridingbytes"
+        widgetId = "646968545675476992"
+        number = 5
+
 
     # copyright
     [params.copyright]
