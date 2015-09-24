@@ -53,6 +53,9 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
                 ["/services/#administration", "Administration"]
             ]
         [[params.navigation.list]]
+            title = "About"
+            href = "/about"
+        [[params.navigation.list]]
             title = "Contact"
             href = "/contact"
 
@@ -75,6 +78,11 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         [params.sections.services]
             title = "Services"
             subtitle = ""
+
+        # about section /about
+        [params.sections.about]
+            title = "About"
+            subtitle = "About Us"
 
         # blog section /contact
         [params.sections.contact]
@@ -315,4 +323,4 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             #url = ""
         [[params.copyright.links]]
             title = "Legal Notice"
-            url = "/about/imprint"
+            url = "/legal"
