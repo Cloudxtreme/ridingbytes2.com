@@ -86,7 +86,7 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 
   /* Default Page Style with a tiny RB Logo in the header */
   .default-page-single {
-    @include rb-section("../img/sections/default_large.jpg");
+    @include rb-section("../img/sections/default_single_large.jpg");
     &::before {
       top: 0px;
       background-position: center;
@@ -103,7 +103,7 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 .template-default-page-listing {
   /* header */
   .default-page-listing {
-    @include rb-section("../img/sections/default_large.jpg");
+    @include rb-section("../img/sections/default_listing_large.jpg");
     &::before {
       top: 0px;
       background-position: center;
@@ -215,8 +215,11 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   .blog-page-single {
     @include rb-section("../img/sections/blogpost_medium.jpg");
   }
+  .default-page-listing {
+    @include rb-section("../img/sections/default_listing_medium.jpg");
+  }
   .default-page-single {
-    @include rb-section("../img/sections/default_medium.jpg");
+    @include rb-section("../img/sections/default_single_medium.jpg");
   }
 }
 
