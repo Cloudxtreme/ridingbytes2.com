@@ -9,8 +9,8 @@ title = "about"
 
 # RIDING BYTES
 
-RIDING BYTES was founded on July, 2nd 2015. Ramon Bartl, who is the owner
-of the company, holds a finished degree of applied computer sciences and has
+RIDING BYTES was founded on July, 2nd 2015. Ramon Bartl, the owner
+of the company, holds a degree in applied computer sciences and has
 over 10 years of experience in web development.
 
 The company name is a homage to the lately experienced partnership with the

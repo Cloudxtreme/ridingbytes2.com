@@ -72,6 +72,9 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 }
 .section-about {
   @include rb-section("../img/sections/about_large.jpg");
+  &::before {
+    top: 0;
+  }
 }
 .section-contact {
   @include rb-section("../img/sections/contact_large.jpg");

@@ -4315,6 +4315,9 @@ a.gm-toggle-link {
   will-change: transform;
   z-index: -1;
 }
+.section-about::before {
+  top: 0;
+}
 
 .section-contact {
   overflow: hidden;
