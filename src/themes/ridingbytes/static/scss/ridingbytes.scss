@@ -150,6 +150,14 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   padding-bottom: 2em;
 }
 
+.comment-baloon {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+}
+
+
 /* contact section */
 .template-contact-section {
   /* Contact Email Form */

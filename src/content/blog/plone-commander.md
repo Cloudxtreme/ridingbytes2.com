@@ -15,7 +15,7 @@ edit and explore Plone contents with ease.
 
 It is free, open source and [MIT](https://opensource.org/licenses/MIT) licensed.
 
-{{< youtube h9Bc37_eutE >}}
+{{< figure src="/media/blog/plone-commander.jpg" class="e-block-skin image-left" width="85%" >}}
 
 <!--more-->
 
@@ -31,3 +31,7 @@ of handling an external application like this.
 [Plone Commander](https://github.com/ridingbytes/plone.commander/releases) is
 available on the official RIDING BYTES [GitHub Account](https://github.com/ridingbytes).
 
+
+## See it in action
+
+{{< youtube h9Bc37_eutE >}}
