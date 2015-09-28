@@ -70,6 +70,12 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 .section-services {
   @include rb-section("../img/sections/services_large.jpg");
 }
+.section-portfolio {
+  @include rb-section("../img/sections/portfolio_large.jpg");
+  &::before {
+    top: 0;
+  }
+}
 .section-about {
   @include rb-section("../img/sections/about_large.jpg");
   &::before {
@@ -125,6 +131,15 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 
 /* services section*/
 .template-services-section {
+  /* smaller content fonts */
+  #content {
+    @include rb-content-fonts;
+    padding-bottom: 2em;
+  }
+}
+
+/* portfolio section*/
+.template-portfolio-section {
   /* smaller content fonts */
   #content {
     @include rb-content-fonts;
@@ -316,6 +331,9 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 .image-right {
   background-color: white;
   text-align: right;
+}
+.rb-divider {
+  color: $rb-gold;
 }
 
 /* Influences the Section behavior */

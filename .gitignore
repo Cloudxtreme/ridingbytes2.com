@@ -5,3 +5,4 @@ build
 node_modules
 src/themes/ridingbytes/static/img/sections
 vendor
+src/themes/ridingbytes/static/css

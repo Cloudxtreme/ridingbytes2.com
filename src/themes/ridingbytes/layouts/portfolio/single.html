@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body class="template-project-page-single">
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light project-page-single">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-project.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      <div class="container">
+
+        <div class="e-block e-block-skin">
+
+          <div class="container">
+
+            <h2 class="font-accident-one-bold uppercase">
+              {{ .Title }}
+            </h2>
+            <div class="dividewhite2"></div>
+
+            <div class="row">
+
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img src="/media/blog/plone-commander.jpg" class="img-responsive" alt="img11"/>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-11 col-md-offset-1">
+
+                        <div class="portfolio-item-data">
+
+                          <h5 class="font-accident-one-medium uppercase">Project Data</h5>
+                          <div class="infoblock">
+                              <hr>
+                              <ul>
+                                  <li>Project Category: <span>Web Design</span></li>
+                                  <li>Client: <span>Ergotron LLC</span></li>
+                                  <li>Start Date: <span>11.14.2014</span></li>
+                                  <li>End Date: <span>12.02.2014</span></li>
+                              </ul>
+                          </div>
+
+                          <h5 class="font-accident-one-medium uppercase">Project Features</h5>
+                          <div class="infoblock">
+                              <hr>
+                              <ul class="list-o">
+                                  <li>Sed laoreet lacinia eros et mattis.</li>
+                                  <li>Etiam hendrerit</li>
+                                  <li>Cras pharetra suscipit tempus.</li>
+                                  <li>Sed laoreet lacinia eros et mattis.</li>
+                              </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="dividewhite2"></div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="font-accident-one-medium uppercase">Overview</h3>
+                <p>
+                  The organization was founded by Mrs. Ethel Brogan, a native of Armagh,
+                  Northern Ireland who learned Irish by spending one month each summer in the Gaeltacht.
+                  She emigrated to New York City in 1946 and eventually moved to upstate New York.
+                  In the United States, Brogan began teaching Irish classes for the benefit of interested neighbors.
+                  In 1981, she arranged the first "Gaeltacht Weekend" in New York for students to improve their
+                  Irish language skills through total immersion.
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /main content -->
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+        <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  </body>
+</html>
+

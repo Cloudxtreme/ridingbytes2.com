@@ -58,7 +58,7 @@ jQuery(document).ready(function () {
     });
 
     /* activate jquery isotope */
-    var $container = jQuery('#posts').isotope({
+    var $container = jQuery('#projects').isotope({
       itemSelector : '.item',
       isFitWidth: true
     });

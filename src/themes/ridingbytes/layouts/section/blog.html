@@ -93,13 +93,21 @@
               {{ range .Data.Pages }}
               <!-- single blog post -->
               <article class="post">
-                <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                 <!-- Blog post attributes #2 -->
                 <div class="post-attrib">
-                  <!--<div class="comment-baloon">75</div>-->
+                  <div class="comment-baloon">
+                    <a href="{{ .RelPermalink }}#disqus_thread">0</a>
+                  </div>
                   <div class="post-data">
                     <div class="post-date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
-                    <div class="post-author">by {{ .Params.author }}</div>
+                    <div class="post-author">by {{ .Params.author }}
+                      <!--in
+                      {{range .Params.categories}}
+                        <a class="icon-tag" href="/categories/{{ . | urlize }}"> {{.}}</a>
+                      {{ end }}-->
+                    </div>
+                    <!--<div class="">Reading Time: {{ .ReadingTime }} minute(s)</div>-->
                   </div>
                 </div>
                 <!-- /Blog post attributes #2 -->
@@ -107,7 +115,7 @@
                 <!-- Post Content -->
                 <div class="post-content">{{ .Summary }}</div>
                 <!-- /Post Content -->
-                <a role="button" href="{{ .Permalink }}" class="btn btn-default btn-lgr-str">Read More</a>
+                <a role="button" href="{{ .RelPermalink }}" class="btn btn-default btn-lgr-str">Read More</a>
               </article>
               {{ end }}
               <!-- /single blog post -->
@@ -146,5 +154,8 @@
     <div id="back-top"><a href="#top"></a></div>
     <!-- /Back to Top -->
 
+  <!-- Disqus Comment Count -->
+  {{ partial "disqus-comment-count" .}}
+  <!-- /Disqus Comment Count -->
   </body>
 </html>
