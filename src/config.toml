@@ -1,6 +1,6 @@
 # Site settings
 
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://ridingbytes.com/"
 theme = "ridingbytes"
 title = "Riding Bytes"
 languageCode = "en-us"

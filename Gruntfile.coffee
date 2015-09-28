@@ -83,6 +83,7 @@ module.exports = (grunt) ->
 
     # custom tasks
     grunt.registerTask 'default', ["connect", "watch"]
+    grunt.registerTask 'build', ["sass:dev", "responsive_images", "hugo:public"]
 
     # http://gohugo.io
     grunt.registerTask 'hugo', (target) ->

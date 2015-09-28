@@ -1,5 +1,4 @@
-public
-build
+build/dev
 .sass-cache
 *.map
 node_modules
