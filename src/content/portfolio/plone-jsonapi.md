@@ -2,7 +2,7 @@
 date = "2015-09-14"
 title = "Plone JSON API"
 description = "JSON Web Interface for the Plone CMS"
-tags = ["plone", "web", "api"]
+tags = ["plone", "api"]
 img = "plone-jsonapi.png"
 client = "Open Source"
 start = "2013-09-30"
@@ -41,6 +41,11 @@ The [plone.jsonapi.routes] is compatible with [Plone] 4.
 # Documentation
 
 Read the latest documentation: <http://plonejsonapiroutes.readthedocs.org>
+
+
+# Where to get?
+
+Get the latest version on the Python Package Index: <https://pypi.python.org/pypi/plone.jsonapi.routes>
 
 
 # See it in action

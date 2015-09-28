@@ -101,19 +101,20 @@
                   </div>
                   <div class="post-data">
                     <div class="post-date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
-                    <div class="post-author">by {{ .Params.author }}
-                      <!--in
-                      {{range .Params.categories}}
-                        <a class="icon-tag" href="/categories/{{ . | urlize }}"> {{.}}</a>
-                      {{ end }}-->
-                    </div>
-                    <!--<div class="">Reading Time: {{ .ReadingTime }} minute(s)</div>-->
+                    <div class="post-author">by {{ .Params.author }}</div>
                   </div>
+                  <p>{{ .Params.summary }}</p>
                 </div>
                 <!-- /Blog post attributes #2 -->
 
                 <!-- Post Content -->
-                <div class="post-content">{{ .Summary }}</div>
+                <!--<div class="post-content">{{ .Summary }}</div>-->
+                <div class="post-content">
+                  <a href="{{ .RelPermalink }}">
+                    <img src="/media/blog/{{ .Params.img }}" width="85%">
+                  </a>
+                  <div class="text-muted">Approx. Reading Time: {{ .ReadingTime }} minute(s)</div>
+                </div>
                 <!-- /Post Content -->
                 <a role="button" href="{{ .RelPermalink }}" class="btn btn-default btn-lgr-str">Read More</a>
               </article>

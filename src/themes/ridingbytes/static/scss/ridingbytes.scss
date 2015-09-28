@@ -257,6 +257,12 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   .section-services {
     @include rb-section("../img/sections/services_medium.jpg");
   }
+  .section-portfolio {
+    @include rb-section("../img/sections/portfolio_medium.jpg");
+    &::before {
+      top: 0;
+    }
+  }
   .section-contact {
     @include rb-section("../img/sections/contact_medium.jpg");
   }
@@ -334,6 +340,10 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
 /*------------------------------------------------------------------
 [7. Global]
 */
+
+#content {
+  /*font-size: 110%;*/
+}
 
 .image-left {
   background-color: white;

@@ -70,14 +70,14 @@
             {{ range .Data.Pages }}
             <div class="item col-md-4 isotope-item{{ range .Params.tags }} {{ . }}{{ end }}">
               <div class="item-wrap">
-                <figure class="effect-goliath captions">
-                  <img src="/media/portfolio/{{ .Params.img }}" height="300" />
+                <figure class="effect-goliath captions" style="height:250px;overflow:hidden;">
+                  <img src="/media/portfolio/{{ .Params.img }}" />
                   <figcaption>
-                  <a href="{{ .Permalink }}">View more</a>
+                  <a href="{{ .RelPermalink }}#content">View more</a>
                   </figcaption>
                 </figure>
                 <div class="portfolio-caption">
-                  <h4 class="font-accident-one-normal uppercase"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                  <h4 class="font-accident-one-normal uppercase"><a href="{{ .RelPermalink }}#content">{{ .Title }}</a></h4>
                   <p>{{ .Description }}</p>
                   <div class="dividewhite1"></div>
                   <div class="portfolio-date">

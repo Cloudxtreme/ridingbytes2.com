@@ -4,6 +4,8 @@ categories = ["Web", "Development", "ExtJS", "Plone"]
 date = "2015-09-23T20:26:22+02:00"
 title = "Plone Commander"
 description = "Handle Plone Contents with Ease"
+img = "plone-commander.jpg"
+summary = "Cross Platform Application to handle Contents in Plone"
 +++
 
 # About Plone Commander
@@ -15,7 +17,7 @@ edit and explore Plone contents with ease.
 
 It is free, open source and [MIT](https://opensource.org/licenses/MIT) licensed.
 
-{{< figure src="/media/blog/plone-commander.jpg" class="e-block-skin image-left" width="85%" >}}
+<!--{{< figure src="/media/blog  /plone-commander.jpg" class="e-block-skin image-left" width="85%" >}}-->
 
 <!--more-->
 
