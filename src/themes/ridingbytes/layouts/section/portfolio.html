@@ -71,7 +71,7 @@
             <div class="item col-md-4 isotope-item{{ range .Params.tags }} {{ . }}{{ end }}">
               <div class="item-wrap">
                 <figure class="effect-goliath captions">
-                  <img src="/media/blog/plone-commander.jpg" alt="img11"/>
+                  <img src="/media/portfolio/{{ .Params.img }}" height="300" />
                   <figcaption>
                   <a href="{{ .Permalink }}">View more</a>
                   </figcaption>
@@ -95,17 +95,6 @@
           </div>
         </div>
       </div>
-
-      {{ range .Data.Pages }}
-      <div class="container">
-        <div class="row">
-          <!-- page content -->
-          <div id="{{ lower .Title }}" class="col-md-12">
-            {{ .Content }}
-          </div>
-        </div>
-      </div>
-      {{ end }}
 
     </div>
     <!-- /main content -->

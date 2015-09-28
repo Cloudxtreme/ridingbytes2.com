@@ -8,7 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body class="template-project-page-single">
+  <body class="template-portfolio-page-single">
 
     <!-- sub-top -->
     <div id="sub-top-light">
@@ -21,7 +21,7 @@
     <!-- /sub-top -->
 
     <!-- main-top -->
-    <header id="header-wrapper-mp" class="sticky-menu-light project-page-single">
+    <header id="header-wrapper-mp" class="sticky-menu-light portfolio-page-single">
 
       <div class="sticky-header header-light" role="navigation">
         <div class="container mp-nav">
@@ -68,7 +68,7 @@
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-8">
-                    <img src="/media/blog/plone-commander.jpg" class="img-responsive" alt="img11"/>
+                    <img src="/media/portfolio/{{ .Params.img }}" class="img-responsive" />
                   </div>
                   <div class="col-md-4">
                     <div class="row">
@@ -80,10 +80,10 @@
                           <div class="infoblock">
                               <hr>
                               <ul>
-                                  <li>Project Category: <span>Web Design</span></li>
-                                  <li>Client: <span>Ergotron LLC</span></li>
-                                  <li>Start Date: <span>11.14.2014</span></li>
-                                  <li>End Date: <span>12.02.2014</span></li>
+                                <li>Project Category: {{ range .Params.tags }}<span>{{ . | upper }} {{ end }}</span></li>
+                                <li>Client: <span>{{ .Params.client  }}</span></li>
+                                <li>Start Date: <span>{{ .Params.start }}</span></li>
+                                <li>End Date: <span>{{ .Params.end }}</span></li>
                               </ul>
                           </div>
 
@@ -91,10 +91,9 @@
                           <div class="infoblock">
                               <hr>
                               <ul class="list-o">
-                                  <li>Sed laoreet lacinia eros et mattis.</li>
-                                  <li>Etiam hendrerit</li>
-                                  <li>Cras pharetra suscipit tempus.</li>
-                                  <li>Sed laoreet lacinia eros et mattis.</li>
+                                {{ range .Params.features }}
+                                  <li>{{ . }}</li>
+                                {{ end }}
                               </ul>
                           </div>
 
@@ -112,24 +111,10 @@
             <div class="dividewhite2"></div>
 
             <div class="row">
-              <div class="col-md-12">
-                <h3 class="font-accident-one-medium uppercase">Overview</h3>
-                <p>
-                  The organization was founded by Mrs. Ethel Brogan, a native of Armagh,
-                  Northern Ireland who learned Irish by spending one month each summer in the Gaeltacht.
-                  She emigrated to New York City in 1946 and eventually moved to upstate New York.
-                  In the United States, Brogan began teaching Irish classes for the benefit of interested neighbors.
-                  In 1981, she arranged the first "Gaeltacht Weekend" in New York for students to improve their
-                  Irish language skills through total immersion.
-                </p>
+              <div class="col-md-12 portfolio-content">
+                {{ .Content }}
               </div>
             </div>
-
-
-
-
-
-
 
           </div>
         </div>

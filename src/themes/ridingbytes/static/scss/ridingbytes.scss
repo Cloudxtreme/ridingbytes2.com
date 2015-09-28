@@ -160,6 +160,10 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   @include rb-section("../img/sections/blogpost_large.jpg");
 }
 
+.portfolio-page-single {
+  @include rb-section("../img/sections/project_large.jpg");
+}
+
 .post-content {
   @include rb-content-fonts;
   padding-bottom: 2em;
@@ -172,6 +176,10 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
     }
 }
 
+.portfolio-content {
+  @include rb-content-fonts;
+  padding-bottom: 2em;
+}
 
 /* contact section */
 .template-contact-section {
@@ -260,6 +268,9 @@ $rb-orange: #ff8033; /* Sekundärfarbe: Orange */
   }
   .blog-page-single {
     @include rb-section("../img/sections/blogpost_medium.jpg");
+  }
+  .portfolio-page-single {
+    @include rb-section("../img/sections/project_medium.jpg");
   }
   .default-page-listing {
     @include rb-section("../img/sections/default_listing_medium.jpg");
