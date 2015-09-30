@@ -81,21 +81,25 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         [params.sections.services]
             title = "Services"
             subtitle = ""
+            href = "/services"
 
         # about section /about
         [params.sections.about]
             title = "About"
             subtitle = "About Us"
+            href = "/about"
 
         # portfolio section /portfolio
         [params.sections.portfolio]
             title = "Portfolio"
             subtitle = "Our Work"
+            href = "/portfolio"
 
         # contact section /contact
         [params.sections.contact]
             title = "Contact"
             subtitle = "Contact us today for any more details"
+            href = "/contact"
 
         # 404 section /404
         [params.sections.fourohfour]
