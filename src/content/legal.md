@@ -5,22 +5,76 @@ title = "Legal Notice"
 description = ""
 +++
 
-## Angaben gemäß § 5 TMG
+# Legal Information
 
-Riding Bytes UG (haftungsbeschränkt)
-
-Handelsregister: Amtsgericht Ulm, HRB: 732278
+**RIDING BYTES UG (haftungsbeschränkt)**
 
 Einöde 49A
 
 87474 Buchenberg
 
-Vertreten durch
+Registration Court: Amtsgericht Ulm
 
-Ramon Bartl
+Commercial Register Number: HRB 732278
 
-## Kontakt
+Managing Director: Ramon Bartl
+
+Responsible for the content: Ramon Bartl
+
+
+## Contact
 
 Mail: [hello@ridingbytes.com](mailto:hello@ridingbytes.com)
 
-Web: [http://ridingbytes.com](http://ridingbytes.com)
+Internet: [http://ridingbytes.com](http://ridingbytes.com)
+
+{{< divider >}}
+
+# Disclaimer
+
+### Inhalt
+
+Die RIDING BYTES UG stellt die Inhalte dieser Internetseiten mit großer Sorgfalt
+zusammen. Jedoch übernehmen wir keine Gewähr für die Aktualität, Richtigkeit und
+Vollständigkeit der Informationen auf diesen Seiten oder den jederzeitigen
+störungsfreien Zugang. RIDING BYTES behält sich vor, Teile der Seiten ohne
+gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die
+Veröffentlichung zeitweise einzustellen.
+
+### Verweise/Links und Download
+
+Bei direkten oder indirekten Verweisen auf die Internetseiten Dritter ("Links"),
+übernimmt RIDING BYTES keine Verantwortung für die Inhalte der verlinkten
+Seiten. Mit dem Betätigen des Verweises verlassen Sie das Informationsangebot
+von RIDING BYTES. Für die Angebote Dritter können daher abweichende Regelungen
+gelten, insbesondere hinsichtlich des Datenschutzes.
+
+Weiterhin schließt RIDING BYTES ihre Haftung bei Serviceleistungen, insbesondere
+beim Download von durch RIDING BYTES zur Verfügung gestellten Daten, aus.
+
+### Autoren-, Urheber- und Kennzeichnungsrecht
+
+Alle innerhalb des Internetpräsenz genannten und ggfs. durch Dritte geschützte
+Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des
+jeweils gültigen Kennzeichnungsrechts und den Besitzrechten der jeweiligen
+eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der
+Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind.
+
+### Datenschutz
+
+Wenn innerhalb des Internetpräsenz die Möglichkeit zur Angabe persönlicher
+und/oder geschäftlicher Daten (e-Mail-Adresse, Namen, Anschrift etc.)
+wahrgenommen wird, dann erfolgt die Freigabe dieser Daten seitens des Adressaten
+auf ausdrücklich freiwilliger Basis. Wird das Einverständnis zur Nennung bzw.
+Verwaltung solcher Daten zurückgezogen, dann ist RIDING BYTES verpflichtet,
+umgehend die vollständige Löschung dieser Daten vorzunehmen.
+
+### Copyright
+
+Alle Texte, Bilder und andere auf der Internetpräsenz veröffentlichte Werke
+unterliegen - sofern nicht anders gekennzeichnet - dem Copyright der RIDING
+BYTES UG. Jede Vervielfältigung, Verbreitung, Speicherung, Übermittlung, Sendung
+und Wieder- bzw. Weitergabe der Inhalte ist ohne schriftliche Genehmigung von
+RIDING BYTES ausdrücklich untersagt.
+
+{{< divider >}}
