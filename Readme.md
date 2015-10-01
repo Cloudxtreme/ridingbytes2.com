@@ -1,4 +1,4 @@
-# RIDING BYTES WEB
+# RIDING BYTES WEBSITE
 
 Template: Electron v1.2
 
