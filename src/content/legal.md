@@ -17,6 +17,8 @@ Registration Court: Amtsgericht Ulm
 
 Commercial Register Number: HRB 732278
 
+USt-IdNr. (VAT No.): DE301668607
+
 Managing Director: Ramon Bartl
 
 Responsible for the content: Ramon Bartl
