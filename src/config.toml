@@ -298,7 +298,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             name = "Bika Lab Systems"
             logo = "bika.jpg"
             href = "http://www.bikalabs.com"
-            description = "Bika Labs provides up-market Open Source laboratory information management systems based."
+            description = "Bika Labs provides up-market Open Source Laboratory Information Management Systems."
 
         [[params.partners.list]]
             name = "KGM GmbH"
