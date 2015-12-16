@@ -292,7 +292,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     # partners
     [params.partners]
         title = "Partners"
-        description = "RIDING BYTES is more than just one Company – It is a strong Network of Partners"
+        description = "More than just one Company – A worldwide Network of strong Partners"
 
         [[params.partners.list]]
             name = "Bika Lab Systems"
