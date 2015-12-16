@@ -328,13 +328,13 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             name = "2degrees Mobile Limited"
             logo = "2degrees.png"
             href = "http://www.2degreesmobile.co.nz"
-            description = "We support 2degrees Mobile to interface Plone with other services."
+            description = "We support 2degrees Mobile to interface Plone with other Servers and Web-Services."
 
         [[params.customers.list]]
             name = "Gletscher Cola"
             logo = "gletschercola.png"
             href = "http://www.gletschercola.de"
-            description = "We support Gletscher Cola with Consulting and Development Services"
+            description = "We support Gletscher Cola with Consulting and Development Services."
 
 
     # systems
