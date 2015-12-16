@@ -38,6 +38,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             submenu = [
                 ["/#services", "Services"],
                 ["/#team", "Team"],
+                ["/#partners", "Partners"],
                 ["/#customers", "Customers"]
             ]
         [[params.navigation.list]]
@@ -288,23 +289,52 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             ]
 
 
-    # customers
-    [params.customers]
-        title = "Customers"
-        description = "Worldwide Clients"
-        [[params.customers.list]]
-            name = "2degrees Mobile Limited"
-            logo = "2degrees.jpg"
-            href = "http://www.2degreesmobile.co.nz"
-            description = ""
-        [[params.customers.list]]
+    # partners
+    [params.partners]
+        title = "Partners"
+        description = "RIDING BYTES is more than just one Company – It is a strong Network of Partners"
+
+        [[params.partners.list]]
+            name = "Bika Lab Systems"
+            logo = "bika.jpg"
+            href = "http://www.bikalabs.com"
+            description = "Bika Labs provides up-market Open Source laboratory information management systems based."
+
+        [[params.partners.list]]
+            name = "KGM GmbH"
+            logo = "kgm.png"
+            href = "http://www.k-g-m.com"
+            description = "KGM is an independend Marketing Agency, which offers brilliant Concepts and Services around Brand Creation, and Recognition."
+
+        [[params.partners.list]]
             name = "nexiles GmbH"
             logo = "nexiles.png"
             href = "http://www.nexiles.com"
+            description = "Nexiles offers Services around Product Development and Information Management."
+
+
+    # customers
+    [params.customers]
+        title = "Customers"
+        description = "We create sustainable IT Solutions for all kind of Businesses"
+
+        [[params.customers.list]]
+            name = "Alpenleder"
+            logo = "alpenleder.png"
+            href = "http://www.alpenleder.com"
+            description = "We provide a holistic business solution for Alpenleder. We integrate Website, Sales and E-Commerce Services in Odoo ERP."
+
+        [[params.customers.list]]
+            name = "2degrees Mobile Limited"
+            logo = "2degrees.png"
+            href = "http://www.2degreesmobile.co.nz"
+            description = "We support 2degrees Mobile to interface Plone with other services."
+
         [[params.customers.list]]
             name = "Gletscher Cola"
-            logo = "gletschercola.jpg"
+            logo = "gletschercola.png"
             href = "http://www.gletschercola.de"
+            description = "We support Gletscher Cola with Consulting and Development Services"
 
 
     # systems
