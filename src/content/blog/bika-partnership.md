@@ -1,6 +1,6 @@
 +++
 author = "RIDING BYTES"
-categories = ["Web", "Development", "JS", "ExtJS", "Plone"]
+categories = ["Anouncement", "Company", "Plone"]
 date = "2015-12-17T21:53:09+01:00"
 description = ""
 draft = false
