@@ -322,13 +322,13 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             name = "Alpenleder"
             logo = "alpenleder.png"
             href = "http://www.alpenleder.com"
-            description = "We provide a holistic business solution for Alpenleder. We integrate Website, Sales and E-Commerce Services in Odoo ERP."
+            description = "We provide a holistic business solution for Alpenleder with a complete integration of their Website, Sales and E-Commerce Requirements in Odoo ERP."
 
         [[params.customers.list]]
             name = "2degrees Mobile Limited"
             logo = "2degrees.png"
             href = "http://www.2degreesmobile.co.nz"
-            description = "We support 2degrees Mobile to interface Plone with other Servers and Web-Services."
+            description = "We support 2degrees Mobile in New Zealand to interface their Data Management Server with their existing IT Infrastructure."
 
         [[params.customers.list]]
             name = "Gletscher Cola"
