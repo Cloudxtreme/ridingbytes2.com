@@ -23,3 +23,6 @@ Setup
 ..code-block:: bash
 
   grunt
+
+
+5. The server runs on http://localhost:8000
