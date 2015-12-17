@@ -5,7 +5,7 @@ date = "2015-12-17T21:53:09+01:00"
 description = ""
 draft = false
 title = "RIDING BYTES-Bika Labs-Partnership"
-img = "bika-partnership.png"
+img = "cape-point.jpg"
 summary = "Europe meets South Africa"
 +++
 
@@ -22,6 +22,9 @@ based on the enterprise [CMS Plone](https://plone.org).
 RIDING BYTES supports Bika Labs with interfacing LIMS to other systems and
 mobile application development.
 
-{{< tweet 676372319506444288>}}
-
 Looking forward to many interesting projects and a lot of technical opportunities.
+
+{{< img src="/media/blog/bika-partnership.png" class="image-left" >}}
+
+<!-- {{< tweet 676372319506444288>}} -->
+
