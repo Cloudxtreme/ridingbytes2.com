@@ -436,6 +436,10 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         widgetId = "646968545675476992"
         number = 5
 
+    # facebook feed
+    [params.facebook]
+        title = ""
+
 
     # copyright
     [params.copyright]

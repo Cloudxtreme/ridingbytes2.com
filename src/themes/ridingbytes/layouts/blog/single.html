@@ -62,6 +62,9 @@
           <!-- page content -->
           <div class="col-md-12 post-content">
             {{ .Content }}
+            <!-- facebook feed -->
+            {{ partial "facebook.html" .}}
+            <!-- /facebook feed -->
           </div>
         </div>
 

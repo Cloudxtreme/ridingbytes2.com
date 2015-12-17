@@ -60,6 +60,9 @@
               <div class="col-md-11">
                 <div id="tertiary">
                   <div id="secondary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                    <!-- twitter feed -->
+                    {{ partial "twitter.html" .}}
+                    <!-- /twitter feed -->
 
                     <!-- post categories -->
                     <div class="widget">
@@ -75,10 +78,6 @@
                       </div>
                     </div>
                     <!-- /post categories -->
-
-                    <!-- twitter feed -->
-                    {{ partial "twitter.html" .}}
-                    <!-- /twitter feed -->
 
                   </div>
                 </div>
