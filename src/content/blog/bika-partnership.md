@@ -15,6 +15,8 @@ summary = "Europe meets South Africa"
 
 Since December 15, 2015 RIDING BYTES and Bika Labs (South Africa) are official Partners.
 
+<!--more-->
+
 [Bika Labs](http://bikalabs.com) provides up-market Open Source
 [Laboratory Information Management Systems](https://en.wikipedia.org/wiki/Laboratory_information_management_system)
 based on the enterprise [CMS Plone](https://plone.org).

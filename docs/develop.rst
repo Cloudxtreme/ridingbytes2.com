@@ -1,6 +1,9 @@
 Development
 ===========
 
+This section describes how to setup the development environment.
+
+
 Setup
 -----
 
@@ -8,21 +11,22 @@ Setup
 
 2. Install the requirements:
 
-..code-block:: bash
+.. code-block:: bash
 
   pip install -r requirements.txt
 
 3. Install `node` modules:
 
-..code-block:: bash
+.. code-block:: bash
 
   npm install
 
 4. Start `grunt`:
 
-..code-block:: bash
+.. code-block:: bash
 
   grunt
 
-
 5. The server runs on http://localhost:8000
+
+
