@@ -4,7 +4,7 @@ categories = ["Web", "Development", "ExtJS", "Plone"]
 date = "2015-09-23T20:26:22+02:00"
 title = "Plone Commander"
 description = "Handle Plone Contents with Ease"
-img = "plone-commander.jpg"
+img = "plone-commander.png"
 summary = "Cross Platform Application to handle Contents in Plone"
 +++
 
