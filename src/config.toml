@@ -440,6 +440,9 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     [params.facebook]
         title = ""
 
+    # google analytics
+    [params.googleanalytics]
+        uac = "UA-71580219-1"
 
     # copyright
     [params.copyright]
