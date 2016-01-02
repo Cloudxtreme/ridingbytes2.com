@@ -8,7 +8,7 @@ title = "Odoo: Remember the filename of binary files"
 summary = "Keep the filename and extension of binary files in Odoo"
 +++
 
-# Problem
+## Problem
 
 I wanted to use a binary field to store image data to a custom model.
 Therefore I used a field of the type `Binary` in my model. Unfortunately only
