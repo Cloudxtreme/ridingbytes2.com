@@ -40,24 +40,36 @@ Example:
     author = "RIDING BYTES"
     categories = ["Web", "Development", "JS", "ExtJS", "Plone"]
     date = "2015-12-17T21:53:09+01:00"
-    description = ""
+    description = "This text is displayed below the title on the blog page"
     draft = true
     title = "bika partnership"
     img = "bika-partnership.jpg"
+    summary = "This summary is displayed on the blog listing"
     +++
+
+Description:
+
+.. code-block:: ini
+
+    draft = If `true`, then the article is invisible for website visitors
+
+    img = An image located in scr/content/media, which will be displayed
+          in the blog listing
+
+    summary = Teaser text displayed in the blog listing
+
+    description = Secondary headline on the blog page
+
+
 
 .. note:: For a detailed description about the front matter, visit the
           documentation of Hugo http://gohugo.io/content/front-matter
 
-                
 Adding Content
 ..............
 
 The content starts right after the last `+++` marker. The content must be
 written in markdown (http://markdown.de).
-
-You can specify a "summary" text, which. Simply add the `<!--more-->` marker
-after the first paragraph of text (http://gohugo.io/content/summaries).
 
 
 Shortcodes
