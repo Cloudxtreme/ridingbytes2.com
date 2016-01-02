@@ -3,7 +3,7 @@ author = "RIDING BYTES"
 categories = ["Odoo"]
 date = "2016-01-02T19:26:32+01:00"
 description = ""
-draft = true
+draft = false
 title = "Odoo: Remember the filename of binary files"
 summary = "Keep the filename and extension of binary files in Odoo"
 +++
