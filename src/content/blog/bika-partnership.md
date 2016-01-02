@@ -30,3 +30,5 @@ Looking forward to many interesting projects and a lot of technical opportunitie
 
 <!-- {{< tweet 676372319506444288>}} -->
 
+{{< divider >}}
+
