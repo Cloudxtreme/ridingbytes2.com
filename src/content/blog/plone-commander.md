@@ -1,6 +1,6 @@
 +++
 author = "RIDING BYTES"
-categories = ["Web", "Development", "ExtJS", "Plone"]
+categories = ["Development", "ExtJS", "Plone"]
 date = "2015-09-23T20:26:22+02:00"
 title = "Plone Commander"
 description = "Handle Plone Contents with Ease"
@@ -8,7 +8,7 @@ img = "plone-commander.png"
 summary = "Cross Platform Application to handle Contents in Plone"
 +++
 
-# About Plone Commander
+# Plone Commander
 
 [Plone Commander](https://github.com/ridingbytes/plone.commander/releases) is a
 cross platform application built with [ExtJS](https://www.sencha.com/products/extjs)

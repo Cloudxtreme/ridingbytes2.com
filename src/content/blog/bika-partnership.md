@@ -1,6 +1,6 @@
 +++
 author = "RIDING BYTES"
-categories = ["Anouncement", "Company", "Plone"]
+categories = ["Company"]
 date = "2015-12-17T21:53:09+01:00"
 description = ""
 draft = false
@@ -9,13 +9,15 @@ img = "cape-point.jpg"
 summary = "Europe meets South Africa"
 +++
 
-# Europe meets South Africa
+# RIDING BYTES / Bika Labs - Partnership
 
 <!-- {{< tweet 677201899674800129 >}} -->
 
 Since December 15, 2015 RIDING BYTES and Bika Labs (South Africa) are official Partners.
 
 <!--more-->
+
+## About
 
 [Bika Labs](http://bikalabs.com) provides up-market Open Source
 [Laboratory Information Management Systems](https://en.wikipedia.org/wiki/Laboratory_information_management_system)

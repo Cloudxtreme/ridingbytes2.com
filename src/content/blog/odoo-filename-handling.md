@@ -1,6 +1,6 @@
 +++
 author = "RIDING BYTES"
-categories = ["Odoo"]
+categories = ["Odoo", "Development"]
 date = "2016-01-02T19:26:32+01:00"
 description = ""
 draft = false
@@ -8,11 +8,13 @@ title = "Odoo: Remember the filename of binary files"
 summary = "Keep the filename and extension of binary files in Odoo"
 +++
 
+# Odoo: Remember the filename of binary files
+
 ## Problem
 
 I wanted to use a binary field to store image data to a custom model.
 Therefore I used a field of the type `Binary` in my model. Unfortunately only
-the base64 encoded file was stored in the database and not the filename. This
+the base64 encoded file was stored in the database but not the filename. This
 resulted in an unknown binary file download with the name of the current model.
 
 <!--more-->
