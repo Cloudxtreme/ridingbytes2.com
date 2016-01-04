@@ -212,7 +212,7 @@ Now it was possible to access the computed fields directly with the URL of the
 
 Or simply by the URL itself:
 
-http://localhost:8069/website/image/slider.revolution.slide/1/image_medium
+http://localhost:8069/website/image/my.model/1/image_medium
 
 ## Conclusion
 
