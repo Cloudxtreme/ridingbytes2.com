@@ -111,6 +111,8 @@ class MyModel(models.Model):
 
 {{< /highlight >}}
 
+{{< img src="/media/blog/odoo-dynamic-image-resizing.png" class="image-left" >}}
+
 I also wanted to prevent that the images get stored in the database, to avoid
 unnecessary data growth. Therefore I used a computed field
 (`compute="_get_image"`) and passed in the `store=False` option.
@@ -213,6 +215,7 @@ Now it was possible to access the computed fields directly with the URL of the
 Or simply by the URL itself:
 
 http://localhost:8069/website/image/my.model/1/image_medium
+
 
 ## Conclusion
 
