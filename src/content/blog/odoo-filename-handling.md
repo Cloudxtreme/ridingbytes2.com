@@ -6,6 +6,7 @@ description = ""
 draft = false
 title = "Odoo: Remember the filename of binary files"
 summary = "Keep the filename and extension of binary files in Odoo"
+#img = "odoo-white.svg"
 +++
 
 # Odoo: Remember the filename of binary files
