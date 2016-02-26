@@ -43,9 +43,6 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
                 ["/#customers", "Customers"],
             ]
         [[params.navigation.list]]
-            title = "Blog"
-            href = "/blog"
-        [[params.navigation.list]]
             title = "Services"
             href = "/services"
             submenu = [
@@ -57,6 +54,9 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         [[params.navigation.list]]
             title = "Portfolio"
             href = "/portfolio"
+        [[params.navigation.list]]
+            title = "Blog"
+            href = "/blog"
         [[params.navigation.list]]
             title = "About"
             href = "/about"
@@ -227,7 +227,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             title = "16h"
             subtitle = "Introductory"
             discount = "10% Discount"
-            description = "One Time Bookable"
+            description = "* One Time Bookable *"
             subdescription = "Ideal for new Customers"
             cls = "pricing plain"
             details = [
@@ -281,7 +281,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     # services
     [params.services]
         title = "Services"
-        description = "Comprehensive Professional Services"
+        description = "Comprehensive Professional Web-Services"
         [[params.services.list]]
             title = "Development"
             description = ""
@@ -377,7 +377,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     # customers
     [params.customers]
         title = "Customers"
-        description = "We create sustainable IT Solutions for all kind of Businesses"
+        description = "Sustainable IT Solutions for all kinds of Businesses"
 
         [[params.customers.list]]
             name = "Alpenleder"
@@ -439,7 +439,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     [params.contact]
         title = "Contact"
         name = "Riding Bytes"
-        #phone = "+49 160 5551008"
+        phone = "+49 (0) 837 89321459"
         email = "hello@ridingbytes.com"
         address = "RIDING BYTES UG (haftungsbeschränkt), Einöde 49A, 87474 Buchenberg, Germany"
         web = "http://ridingbytes.com"

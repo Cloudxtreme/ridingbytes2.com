@@ -3,8 +3,15 @@ date = "2015-09-22T00:00:00+02:00"
 title = "Development"
 +++
 
-
 # Development
+
+{{< img link="https://www.odoo.com" src="/media/systems/logos/odoo.png" class="image-inline" >}}
+{{< img link="https://plone.org" src="/media/systems/logos/plone.png" class="image-inline" >}}
+{{< img link="http://flask.pocoo.org" src="/media/systems/logos/flask.png" class="image-inline" >}}
+{{< img link="http://gohugo.io" src="/media/systems/logos/hugo.png" class="image-inline" >}}
+{{< img link="https://www.python.org" src="/media/systems/logos/python.png" class="image-inline" >}}
+{{< img link="https://www.sencha.com/products/extjs" src="/media/systems/logos/extjs.png" class="image-inline" >}}
+{{< img link="http://coffeescript.org" src="/media/systems/logos/coffeescript.png" class="image-inline" >}}
 
 RIDING BYTES offers a variety of custom development services. Starting from small
 scripts for task automation or data manipulation, up to enterprise server based
@@ -13,32 +20,6 @@ systems.
 
 The next sections provide a small overview of used systems, technologies
 and the provided services.
-
-
-## Python
-
-[Python](http://python.org) is a modern, powerful and fast programming
-language, that runs on all platforms. It is successfully used in thousands of
-real-world business applications around the world, including many large and
-mission critical system.
-
-We offer custom tailored programs built with [Python](http://python.org), starting
-from a small command line script up to full web systems.
-
-
-## Plone
-
-[Plone](http://plone.org) is one of the biggest and most popular content
-management solutions which uses [Python](http://python.org) under the hood. It
-has been actively developed since 2001, is available in more than 40 languages,
-and has the best security track record of any major CMS. It is owned by the
-Plone Foundation, a 501(c)(3) not-for-profit organization, and is available for
-all major operating systems.
-
-We offer full service and customization for [Plone](http://plone.org),
-integrate it in your new or existing infrastructure and support you with the
-necessary consultancy and trainings.
-
 
 ## Odoo
 
@@ -53,6 +34,18 @@ We offer full service and customization for [Odoo](http://www.odoo.com),
 integrate it in your new or existing infrastructure and support you with the
 necessary consultancy and trainings.
 
+## Plone
+
+[Plone](http://plone.org) is one of the biggest and most popular content
+management solutions which uses [Python](http://python.org) under the hood. It
+has been actively developed since 2001, is available in more than 40 languages,
+and has the best security track record of any major CMS. It is owned by the
+Plone Foundation, a 501(c)(3) not-for-profit organization, and is available for
+all major operating systems.
+
+We offer full service and customization for [Plone](http://plone.org),
+integrate it in your new or existing infrastructure and support you with the
+necessary consultancy and trainings.
 
 ## Flask
 
@@ -64,20 +57,6 @@ can basically handle any database backend and ships with powerful extensions.
 
 We offer complete support in the planning of the architecture and the development of
 any [Flask](http://flask.pocoo.org) based solution.
-
-
-## ExtJS
-
-Desktop application? Mobile/Phone application? Both?
-[ExtJS](https://www.sencha.com/products/extjs) provides a solution for all
-devices. [ExtJS](https://www.sencha.com/products/extjs) is a sophisticated
-JavaScript framework with the capability to build enterprise applications, which
-handles thousands of data records with great performance.
-
-We provide the full service, starting from the planning phase up to development
-and hosting. Powered by [Electron](https://github.com/atom/electron), it is even
-possible to run dedicated applications on MacOS, Linux and Windows.
-
 
 ## Hugo
 
@@ -91,3 +70,32 @@ We offer a full integration and customization from any web based template for
 [Hugo](http://gohugo.io). Either you offer a template, choose a nice one
 from [{wrap}bootstrap] (https://wrapbootstrap.com/themes), or we assemble one for
 you based on a mock up.
+
+## Python
+
+[Python](http://python.org) is a modern, powerful and fast programming
+language, that runs on all platforms. It is successfully used in thousands of
+real-world business applications around the world, including many large and
+mission critical system.
+
+We offer custom tailored programs built with [Python](http://python.org), starting
+from a small command line script up to full web systems.
+
+## ExtJS
+
+Desktop application? Mobile/Phone application? Both?
+[ExtJS](https://www.sencha.com/products/extjs) provides a solution for all
+devices. [ExtJS](https://www.sencha.com/products/extjs) is a sophisticated
+JavaScript framework with the capability to build enterprise applications, which
+handles thousands of data records with great performance.
+
+We provide the full service, starting from the planning phase up to development
+and hosting. Powered by [Electron](https://github.com/atom/electron), it is even
+possible to run dedicated applications on MacOS, Linux and Windows.
+
+## CoffeeScript
+
+[CoffeeScript](http://coffeescript.org) is a little language that compiles
+into JavaScript. Underneath that awkward Java-esque patina, JavaScript has
+always had a gorgeous heart. CoffeeScript is an attempt to expose the good
+parts of JavaScript in a simple way.
