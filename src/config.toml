@@ -220,7 +220,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
     # pricing
     [params.pricing]
-        title = "Pricing Tables"
+        title = "Service Package Offers"
         description = "Time-Boxed Service Packages"
 
         [[params.pricing.list]]
