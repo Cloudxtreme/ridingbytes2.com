@@ -37,9 +37,10 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             href = "/"
             submenu = [
                 ["/#services", "Services"],
-                ["/#team", "Team"],
-                ["/#partners", "Partners"],
-                ["/#customers", "Customers"]
+                ["/#pricing", "Pricing"],
+                #["/#team", "Team"],
+                #["/#partners", "Partners"],
+                ["/#customers", "Customers"],
             ]
         [[params.navigation.list]]
             title = "Blog"
@@ -216,6 +217,66 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
                 start = "950"
                 y = "365"
                 cls = "page-scroll btn btn-lg btn-wh-str"
+
+    # pricing
+    [params.pricing]
+        title = "Pricing Tables"
+        description = "Time-Boxed Service Packages"
+
+        [[params.pricing.list]]
+            title = "16h"
+            subtitle = "Introductory"
+            discount = "10% Discount"
+            description = "One Time Bookable"
+            subdescription = "Ideal for new Customers"
+            cls = "pricing plain"
+            details = [
+                ["16 Hours Fixed Time Package"],
+                ["Development"],
+                ["Consulting"],
+            ]
+
+        [[params.pricing.list]]
+            title = "20h"
+            subtitle = "Small"
+            discount = "5% Discount"
+            description = "Develper Package"
+            subdescription = "Ideal for Small Projects"
+            cls = "pricing plain"
+            details = [
+                ["20 Hours Fixed Time Package"],
+                ["Develpment"],
+                ["UI / UX DESIGN"],
+            ]
+
+        [[params.pricing.list]]
+            title = "50h"
+            subtitle = "Business"
+            discount = "5% Discount"
+            description = "Developer/Admin Package"
+            subdescription = "Ideal for Intermediate Projects"
+            cls = "pricing proposal"
+            details = [
+                ["50h Fixed Time Package"],
+                ["Development"],
+                ["UI / UX DESIGN"],
+                ["Administration"],
+            ]
+
+        [[params.pricing.list]]
+            title = "100h"
+            subtitle = "Professional"
+            discount = "10% Discount"
+            description = "Complete Package"
+            subdescription = "Ideal for Large/Ongoing Projects"
+            cls = "pricing plain"
+            details = [
+                ["100h Fixed Time Package"],
+                ["Development"],
+                ["Consulting"],
+                ["UI / UX DESIGN"],
+                ["Administration"],
+            ]
 
     # services
     [params.services]
