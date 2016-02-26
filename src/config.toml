@@ -240,7 +240,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             title = "20h"
             subtitle = "Small"
             discount = "5% Discount"
-            description = "Develper Package"
+            description = "Developer Package"
             subdescription = "Ideal for Small Projects"
             cls = "pricing plain"
             details = [
@@ -281,7 +281,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
     # services
     [params.services]
         title = "Services"
-        description = "The Internet is our Riding Stable"
+        description = "Comprehensive Professional Services"
         [[params.services.list]]
             title = "Development"
             description = ""
