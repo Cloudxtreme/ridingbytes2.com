@@ -81,7 +81,12 @@
                           <div class="infoblock">
                               <hr>
                               <ul>
-                                <li>Project Category: {{ range .Params.tags }}<span>{{ . | upper }} {{ end }}</span></li>
+                                <li>Project Category:
+                                  {{ range $tag := .Params.tags }}
+                                  <span class="icon-tag"></span>
+                                  <span>{{ . | upper }}</span>
+                                  {{ end }}
+                                </li>
                                 <li>Client: <span>{{ .Params.client  }}</span></li>
                                 <li>Start Date: <span>{{ .Params.start }}</span></li>
                                 <li>End Date: <span>{{ .Params.end }}</span></li>

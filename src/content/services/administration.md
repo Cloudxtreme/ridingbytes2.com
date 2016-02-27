@@ -15,8 +15,8 @@ title = "Administration"
 The right IT solution needs the right operating environment to work properly.
 Server based IT are always coupled with administrative tasks such as
 *Installation*, *Configuration*, *Updates*, *Monitoring*, *Optimizations*,
-*Backups*, *Custom Scripts*, *Domain-, Hosting-, DNS-, Email-Support*,
-*Operational Support*, *and more...*
+*Backups*, *Custom Scripts*, *Domain-, Hosting-, DNS- and Email Setup*,
+*Operational Support*, *...*
 
 ## What we offer
 

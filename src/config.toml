@@ -37,7 +37,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             href = "/"
             submenu = [
                 ["/#services", "Services"],
-                ["/#pricing", "Pricing"],
+                ["/#pricing", "Service Packages"],
                 #["/#team", "Team"],
                 #["/#partners", "Partners"],
                 ["/#customers", "Customers"],
