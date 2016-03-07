@@ -2,7 +2,7 @@
 author = "RIDING BYTES"
 categories = ["Odoo", "Development"]
 date = "2016-03-06T23:44:26+01:00"
-description = ""
+description = "Odoo Developer Mode Bookmarklet"
 draft = false
 summary = "Activate Odoo Developer with a Bookmarklet"
 title = "Odoo: Developer mode"
