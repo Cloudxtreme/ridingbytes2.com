@@ -76,7 +76,10 @@ umgehend die vollständige Löschung dieser Daten vorzunehmen.
 Wir nutzen die Open-Source-Software Piwik für die statistische Auswertung von
 Besucherzugriffen.
 
-Die von Piwik erfassten Daten wer aus welchem Netz eine Anfrage kam, nicht
+Die von Piwik erfassten Daten werden nicht und niemals auf andere Server
+übertragen oder an Dritte weitergegeben, sondern in anonymisierter Form dazu
+verwendet, unser Angebot zu verbessern. IP-Adressen werden in Piwik ohne das
+letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht
 jedoch von welchem Rechner.
 
 Sie können die Datenerfassung durch Piwik hier deaktivieren. Sofern Ihr Browser
