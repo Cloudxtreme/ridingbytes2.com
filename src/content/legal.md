@@ -71,6 +71,27 @@ auf ausdrücklich freiwilliger Basis. Wird das Einverständnis zur Nennung bzw.
 Verwaltung solcher Daten zurückgezogen, dann ist RIDING BYTES verpflichtet,
 umgehend die vollständige Löschung dieser Daten vorzunehmen.
 
+### Einsatz von PIWIK Statistik Tools
+
+Wir nutzen die Open-Source-Software Piwik für die statistische Auswertung von
+Besucherzugriffen.
+
+Die von Piwik erfassten Daten wer aus welchem Netz eine Anfrage kam, nicht
+jedoch von welchem Rechner.
+
+Sie können die Datenerfassung durch Piwik hier deaktivieren. Sofern Ihr Browser
+die „Do-Not-Track“-Technik unterstützt und Sie diese aktiviert haben, wird Ihr
+Besuch automatisch ignoriert.
+
+Durch die Nutzung unserer Website erklären Sie sich mit der Verarbeitung der
+über Sie erhobenen Daten durch Piwik in der zuvor beschriebenen Art und Weise
+und zu dem benannten Zweck einverstanden.
+
+### Fragen und Kommentare
+
+Für Fragen, Anregungen oder Kommentare zum Thema Datenschutz wenden Sie sich
+bitte per E-Mail an datenschutz@ridingbytes.com.
+
 ### Copyright
 
 Alle Texte, Bilder und andere auf der Internetpräsenz veröffentlichte Werke
