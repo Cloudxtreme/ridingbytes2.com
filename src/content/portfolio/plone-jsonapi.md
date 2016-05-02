@@ -2,7 +2,7 @@
 date = "2015-09-14"
 title = "Plone JSON API"
 description = "JSON Web Interface for the Plone CMS"
-tags = ["plone", "api", "open source"]
+tags = ["plone", "api", "open-source"]
 img = "plone-jsonapi.png"
 client = "Open Source"
 start = "2013-09-30"

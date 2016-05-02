@@ -2,7 +2,7 @@
 date = "2015-09-06"
 title = "Plone Commander"
 description = "Content Explorer for the Plone CMS"
-tags = ["plone", "extjs", "open source"]
+tags = ["plone", "extjs", "open-source"]
 img = "plone-commander.png"
 client = "Open Source"
 start = "2015-09-06"
